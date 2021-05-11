@@ -1,9 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Execute,,DIM_WorkFlow:SignupandUserApproval,,,
-2,Browser,Wait for [<Data>] milli seconds,pause,@900000,,
-3,Execute,,DIM_WorkFlow:LoginforDeleteUser,,,
-4,Execute,,DIM_WorkFlow:Settings,,,
-5,Browser,switching to window by title [<Data>],switchToWindowByTitleContains,@Settings,,
-6,Execute,,DIM_WorkFlow:Edit_Update_eMail,,,
-7,Execute,,DIM_WorkFlow:Email_SQL,,,
-8,Execute,,DIM_WorkFlow:User_Signout,,,

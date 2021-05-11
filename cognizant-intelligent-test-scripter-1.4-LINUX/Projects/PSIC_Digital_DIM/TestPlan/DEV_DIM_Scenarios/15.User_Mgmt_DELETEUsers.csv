@@ -1,7 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Execute,,DIM_WorkFlow:SignupandUserApproval,,,
-2,Browser,Wait for [<Data>] milli seconds,pause,@900000,,
-3,Execute,,DIM_WorkFlow:LoginforDeleteUser,,,
-4,Execute,,DIM_WorkFlow:UserMgmt_Click,,,
-5,Execute,,DIM_WorkFlow:UserMgmt_DeleteUsers,,,
-6,Execute,,DIM_WorkFlow:Signout,,,

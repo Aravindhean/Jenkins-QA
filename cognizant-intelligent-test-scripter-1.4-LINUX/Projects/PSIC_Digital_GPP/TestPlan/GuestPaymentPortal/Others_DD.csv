@@ -1,7 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Others,"Click the [<Object>] ",Click,,,GuestPaymentPortal
-2,Others_txt,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:Others,,GuestPaymentPortal
-3,Others_Reference,"Click the [<Object>] ",Click,,,GuestPaymentPortal
-4,Custom_Amt,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:Others,,GuestPaymentPortal
-5,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
-6,Continue,"Click the [<Object>] ",Click,,,GuestPaymentPortal

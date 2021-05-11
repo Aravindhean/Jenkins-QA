@@ -1,4 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,ClaimNo_Check,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,Claims_RuntimeData:Claim_Number,REPLACE,Task_Queue
-2,ClaimNo_Check,"Assert if [<Object>] contains <Object2> ",assertElementDisplayed,,,Task_Queue
-3,ClaimNo_Check,Assert if [<Object>]'s Text Equals [Ignorecase] [<Data>],assertElementTextIEquals,Claims_RuntimeData:Claim_Number,,Task_Queue

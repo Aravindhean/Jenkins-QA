@@ -1,6 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Assignee_Check,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Assignee,,Information_TQ
-2,TeamPending_Check,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:TeamPending,,Information_TQ
-3,TeamPending_Check,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:File_Preview,,Information_TQ
-4,File,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:File_Preview,,Information_TQ
-5,Status_Check,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Info_Status,,Information_TQ

@@ -1,5 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,ViewDocument_Icon,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,ViewDocuments
-"//2",ViewDocument_TreeIcon,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,ViewDocuments
-3,ViewDocument_Title,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,ViewDocuments
-4,Browser,"Take a Screen Shot ",takeScreenshot,,,

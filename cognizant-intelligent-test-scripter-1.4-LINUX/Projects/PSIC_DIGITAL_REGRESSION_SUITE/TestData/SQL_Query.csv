@@ -1,3 +1,0 @@
-Scenario,Flow,Iteration,SubIteration,DB_MobQuery,DB_eMailQuery
-DIM_Scenarios,3.VALIDATE_PhoneNo_SQL,1,1,"select MOBILE_PHONE,*from USER_DETAILS where NEW_USER_ID ='FrankyH6'",
-DIM_Scenarios,4.VALIDATE_eMail_SQL,1,1,,"select EMAIL,*from USER_DETAILS where NEW_USER_ID ='FrankyH6'"

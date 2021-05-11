@@ -1,2 +1,0 @@
-Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
-true,Notifications,1.Enable_Notification,1:4,Passed,Chrome,Default,Any
