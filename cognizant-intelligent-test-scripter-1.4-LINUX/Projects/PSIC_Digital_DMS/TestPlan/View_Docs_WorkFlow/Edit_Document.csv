@@ -1,0 +1,13 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Edit_Docs,Click on [<Object>],clickByJS,,,ViewDocuments
+2,Doc_type,Click the [<Object>] and Wait for Page to be loaded,clickAndWait,,,ViewDocuments
+3,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+4,Doc_DD,Read the rows drop down values in a web table and store it in variable,PSIC_DocumentType,ViewDocument:Docs_type,%Type%,ViewDocuments
+5,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,ViewDocument:Docs_type,%Type%,ViewDocuments
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,ViewDocuments
+7,Check,Click on [<Object>],clickByJS,,,ViewDocuments
+8,Browser,Wait for [<Data>] milli seconds,pause,@3000,,
+9,Doc_SuccessMsg,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,ViewDocuments
+10,Done_BTN,Click on [<Object>],clickByJS,,,ViewDocuments
+11,Browser,Wait for [<Data>] milli seconds,pause,@3000,,
+12,Browser,"Take a Screen Shot ",takeScreenshot,,,

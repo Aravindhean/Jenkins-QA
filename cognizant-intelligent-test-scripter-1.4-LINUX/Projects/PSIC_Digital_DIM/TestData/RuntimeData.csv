@@ -1,0 +1,39 @@
+Scenario,Flow,Iteration,SubIteration,Current_Pwd,New_Pwd,Password_Check,OTP,Reset_Link,Unlock_Link,EMAIL,PHONE_NO,FName,LName,Confirm_Link,UserID
+UAT_DIM_Scenarios,5.VALIDATE_eMail_SQL,1,1,,,,,,,,,jvyfw,gponh,https://pacificspecialty.oktapreview.com/verify-email-change/ECVDyfp9Qu_KjiddFu_5k29WNnMV_kkLT5RUjkNc1_s,gpM3wgP8
+UAT_DIM_Scenarios,6.VALIDATE_ChangePassword,1,1,,,Password changed successfully.,,,,,,,,,
+UAT_DIM_Scenarios,1.Setup_eMail_MFA,1,1,,,,559944,,,UAT1SKJU,,jwhkf,qkzmu,,5BFQaNwD
+UAT_DIM_Scenarios,7.Forgot_Password,1,1,,,,,https://pacificspecialty.oktapreview.com/signin/reset-password/dfpE0TEI73UT0acKp-Ki,,,,,,,
+UAT_DIM_Scenarios,8.Account_Unlock_eMail,1,1,,,,,,https://loginpreview.pacificspecialty.com/signin/user-unlock/H5i2F7Fj162Yilhvea2_,,,,,,
+UAT_DIM_Scenarios,11.SignUp_User_Mgmt_Approval,1,1,,,,,,,,,sklof,wmohe,,qkeePumC
+UAT_DIM_Scenarios,12.User_Mgmt_Deny,1,1,,,,,,,,,xehth,tnwtp,,cvS0FRpf
+UAT_DIM_Scenarios,13.User_Mgmt_ClearUsers,1,1,,,,,,,,,gfhwt,zzdwe,,H9umRK7g
+UAT_DIM_Scenarios,14.User_Mgmt_UpdateUsers,1,1,,,,,,,,,xurre,lxipx,,pxT19XmF
+UAT_DIM_Scenarios,15.User_Mgmt_DELETEUsers,1,1,,,,,,,,,ktrnn,fubpv,,dapK4sjz
+DEV_DIM_Scenarios,5.VALIDATE_eMail_SQL,1,1,,,,,,,,,ivvnz,kiprz,https://pacificspecialty.oktapreview.com/verify-email-change/ECVdfpFVGHNsBQ0DsPMWE-m0e-3P6fbRRGUKoUUAj8G,8Orrf2DW
+DEV_DIM_Scenarios,6.VALIDATE_ChangePassword,1,1,,,Password changed successfully.,,,,,,,,,
+DEV_DIM_Scenarios,1.Setup_eMail_MFA,1,1,,,,454113,,,UAT1SKJU,,gyswg,ishyq,,pSD3L8w2
+DEV_DIM_Scenarios,7.Forgot_Password,1,1,,,,,https://pacificspecialty.oktapreview.com/verify-email-change/ECVVVWW9s4hTuxcJ4ts0mV0dzIaMaq9zTKjtrIQkulN,,,,,,,
+DEV_DIM_Scenarios,8.Account_Unlock_eMail,1,1,,,,,,https://loginpreview.pacificspecialty.com/signin/user-unlock/zvToVMHejNhbcms0afHR,,,,,,
+DEV_DIM_Scenarios,11.SignUp_User_Mgmt_Approval,1,1,,,,,,,,,seoyvhgsqo,fstscirgrl,,exKeDSTM
+DEV_DIM_Scenarios,12.User_Mgmt_Deny,1,1,,,,,,,,,umwueccfbd,xbtgfycxwn,,J8rgnfTI
+DEV_DIM_Scenarios,13.User_Mgmt_ClearUsers,1,1,,,,,,,,,kuyyvhwiuc,lqilrzizha,,D7uryTDL
+DEV_DIM_Scenarios,14.User_Mgmt_UpdateUsers,1,1,,,,,,,,,tilsigrfcz,hpmiwujqnr,,frboGwIw
+DEV_DIM_Scenarios,15.User_Mgmt_DELETEUsers,1,1,,,,,,,,,hnlevilkvi,fuaffcgbnx,,HSpNLk22
+TEST_DIM_Scenarios,5.VALIDATE_eMail_SQL,1,1,,,,,,,,,ivvnz,kiprz,https://pacificspecialty.oktapreview.com/verify-email-change/ECVdfpFVGHNsBQ0DsPMWE-m0e-3P6fbRRGUKoUUAj8G,8Orrf2DW
+TEST_DIM_Scenarios,6.VALIDATE_ChangePassword,1,1,,,Password changed successfully.,,,,,,,,,
+TEST_DIM_Scenarios,1.Setup_eMail_MFA,1,1,,,,454113,,,UAT1SKJU,,vosmm,eatpz,,awGaLNHP
+TEST_DIM_Scenarios,7.Forgot_Password,1,1,,,,,https://pacificspecialty.oktapreview.com/verify-email-change/ECVVVWW9s4hTuxcJ4ts0mV0dzIaMaq9zTKjtrIQkulN,,,,,,,
+TEST_DIM_Scenarios,8.Account_Unlock_eMail,1,1,,,,,,https://loginpreview.pacificspecialty.com/signin/user-unlock/zvToVMHejNhbcms0afHR,,,,,,
+TEST_DIM_Scenarios,11.SignUp_User_Mgmt_Approval,1,1,,,,,,,,,kgsul,wafmr,,MiVYciqJ
+TEST_DIM_Scenarios,12.User_Mgmt_Deny,1,1,,,,,,,,,umwueccfbd,xbtgfycxwn,,J8rgnfTI
+TEST_DIM_Scenarios,13.User_Mgmt_ClearUsers,1,1,,,,,,,,,kuyyvhwiuc,lqilrzizha,,D7uryTDL
+TEST_DIM_Scenarios,14.User_Mgmt_UpdateUsers,1,1,,,,,,,,,tilsigrfcz,hpmiwujqnr,,frboGwIw
+TEST_DIM_Scenarios,15.User_Mgmt_DELETEUsers,1,1,,,,,,,,,hnlevilkvi,fuaffcgbnx,,HSpNLk22
+PROD_DIM_Scenarios,1.Setup_eMail_MFA,1,1,,,,454113,,,UAT1SKJU,,gyswg,ishyq,,pSD3L8w2
+PROD_DIM_Scenarios,7.Forgot_Password,1,1,,,,,https://pacificspecialty.oktapreview.com/verify-email-change/ECVVVWW9s4hTuxcJ4ts0mV0dzIaMaq9zTKjtrIQkulN,,,,,,,
+PROD_DIM_Scenarios,8.Account_Unlock_eMail,1,1,,,,,,https://loginpreview.pacificspecialty.com/signin/user-unlock/zvToVMHejNhbcms0afHR,,,,,,
+PROD_DIM_Scenarios,11.SignUp_User_Mgmt_Approval,1,1,,,,,,,,,seoyvhgsqo,fstscirgrl,,exKeDSTM
+PROD_DIM_Scenarios,12.User_Mgmt_Deny,1,1,,,,,,,,,umwueccfbd,xbtgfycxwn,,J8rgnfTI
+PROD_DIM_Scenarios,13.User_Mgmt_ClearUsers,1,1,,,,,,,,,kuyyvhwiuc,lqilrzizha,,D7uryTDL
+PROD_DIM_Scenarios,14.User_Mgmt_UpdateUsers,1,1,,,,,,,,,tilsigrfcz,hpmiwujqnr,,frboGwIw
+PROD_DIM_Scenarios,15.User_Mgmt_DELETEUsers,1,1,,,,,,,,,hnlevilkvi,fuaffcgbnx,,HSpNLk22

@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,ConstructionType_DD,Clear text [<Data>] from object [<Object>].,clear,,,Duckcreek_Policy
+2,ConstructionType_DD,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_setByJS,DC:Construction_Type,,Duckcreek_Policy
+3,ConstructionType_DD,Click on [<Object>],clickByJS,,,Duckcreek_Policy
+4,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+5,Execute,,GuestPaymentPortal:Page_Navigation,,,

@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Search_BTN,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,Claims_RuntimeData:ClaimNo,,Task_Queue
+2,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
+3,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,Login-Page
+4,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+5,Browser,"Take a Screen Shot ",takeScreenshot,,,

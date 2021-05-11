@@ -1,0 +1,2 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,NoPending_TQ,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Completed_Task

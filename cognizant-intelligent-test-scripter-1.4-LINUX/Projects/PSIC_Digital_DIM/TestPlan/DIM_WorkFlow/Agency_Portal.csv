@@ -1,0 +1,7 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,AP_Logo,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,AP Login
+2,AP_Logo,Assert if [<Object>] element is displayed,assertElementDisplayed,,,AP Login
+3,AP_Profile,Click on [<Object>],clickByJS,,,AP Login
+4,Browser,Wait for [<Data>] milli seconds,pause,@2000,,
+5,AP_Signout,Click on [<Object>],clickByJS,,,AP Login
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,

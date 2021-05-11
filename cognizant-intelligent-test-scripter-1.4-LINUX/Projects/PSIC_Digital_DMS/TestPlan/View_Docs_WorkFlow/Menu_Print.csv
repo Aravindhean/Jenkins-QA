@@ -1,0 +1,12 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Menu,Click the [<Object>] and Wait for Page to be loaded,clickAndWait,,,ViewDocuments
+2,Menu,"Click and hold the [<Object>] element ",clickAndHoldElement,,,ViewDocuments
+3,Print,Click on [<Object>],Click,,,ViewDocuments
+4,Browser,switching to window by title [<Data>],switchToWindowByTitleContains,@ARender,,
+5,Browser,"Take a Screen Shot ",takeScreenshot,,,
+6,PrintIcon,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ViewDocuments
+7,ImgProcessingIcon,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ViewDocuments
+8,PageNavigation,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ViewDocuments
+9,PageCount,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ViewDocuments
+10,Browser,"Take a Screen Shot ",takeScreenshot,,,
+11,Browser,Close the current window and switch to default window,closeAndSwitchToWindow,,,

@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,TeamPending_Check,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Task_Queue
+2,TeamPending_Check,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,TaskQueue_Column:TeamPending,,Task_Queue
+3,Browser,"Take a Screen Shot ",takeScreenshot,,,

@@ -1,0 +1,8 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Doc_Category,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,TaskQueue_DetailedPage
+2,Doc_Category,Click on [<Object>],clickByJS,,,TaskQueue_DetailedPage
+3,Doc_Category,Select item in [<Object>] which has the value: [<Data>]  if the test data is available,PSIC_Selectbytext,File_Category:Document_Category,,TaskQueue_DetailedPage
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,
+5,Doc_SubCategory,Click on [<Object>],clickByJS,,,TaskQueue_DetailedPage
+6,Doc_SubCategory,Select item in [<Object>] which has the value: [<Data>]  if the test data is available,PSIC_Selectbytext,File_Category:Doc_SubCategory,,TaskQueue_DetailedPage
+7,Browser,"Take a Screen Shot ",takeScreenshot,,,

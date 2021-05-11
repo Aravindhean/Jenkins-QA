@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,DMS_Login:Claims_testurl,,
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,Login-Page
+3,UserName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DMS_Login:Claims_User,,Login-Page
+4,Password_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_SetDecrypt,DMS_Login:Claims_Pwd,,Login-Page
+5,Login_BTN,Click on [<Object>],clickByJS,,,Login-Page

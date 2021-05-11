@@ -1,0 +1,23 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+"//1",Signin_TXT,Assert if [<Object>]'s Text Equals [Ignorecase] [<Data>],assertElementDisplayed,,,AP Login
+"//2",Pacific_Img,Assert if [<Object>] is present,assertElementPresent,,,AP Login
+"//3",Browser,"Take a Screen Shot ",takeScreenshot,,,
+"//4",Prod_code,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,Ap_Login:ProducerCode,,AP Login
+"//5",Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+"//6",Prod_Pin,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,Ap_Login:PIN,,AP Login
+"//7",Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+"//8",Signin,Click on [<Object>],clickByJS,,,AP Login
+"//9",Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+"//10",Browser,"Take a Screen Shot ",takeScreenshot,,,
+"//11",UserLogin,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,Ap_Login:ProducerCode,REPLACE,AP Login
+"//12",UserLogin,"Click the [<Object>]  if the test data is available ",PSIC_Click,Ap_Login:ProducerCode,,AP Login
+"//13",UserLogin,Click on [<Object>],clickByJS,,,AP Login
+"//14",Pacific_Img,Assert if [<Object>] is present,assertElementPresent,,,AP Login
+"//15",Continue_BTN,Click on [<Object>],clickByJS,,,AP Login
+"//16",Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+17,AP_Logo,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,AP Login
+18,AP_Logo,Assert if [<Object>] element is displayed,assertElementDisplayed,,,AP Login
+19,AP_Profile,Click on [<Object>],clickByJS,,,AP Login
+20,Browser,Wait for [<Data>] milli seconds,pause,@2000,,
+21,AP_Signout,Click on [<Object>],clickByJS,,,AP Login
+22,Browser,"Take a Screen Shot ",takeScreenshot,,,

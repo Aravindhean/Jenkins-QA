@@ -1,0 +1,11 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@150,,
+"//2",PageTitle_ELE,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,Duckcreek_Policy
+"//3",PageTitle_ELE,Wait for [<Data>] milli seconds,waitForElementToContainText,@TransACT,,Duckcreek_Policy
+"//4",Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@2,,
+5,PolicyNo_ELE,Store the [<Object>] element's text into the Runtime variable: [<Data>],waitForElementToBeVisible,,,Duckcreek_Policy
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,
+7,PolicyNo_ELE,Store the [<Object>] element's text into the Runtime variable: [<Data>],storeTextinDataSheet,Runtime_Data:PolicyNumber,,Duckcreek_Policy
+8,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@20,,
+"//9",PolicyStatus_ELE,Store the [<Object>] element's text into the Runtime variable: [<Data>],storeTextinDataSheet,Runtime_Data:PolicyStatus,,PolicyDetails
+10,Browser,"Take a Screen Shot ",takeScreenshot,,,

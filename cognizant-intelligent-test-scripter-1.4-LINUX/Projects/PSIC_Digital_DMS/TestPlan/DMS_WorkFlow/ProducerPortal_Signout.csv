@@ -1,0 +1,13 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Profile_Icon,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,User_Settings
+2,Browser,Wait for Page to be loaded,waitForPageLoaded,,,
+3,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+4,Profile_Icon,"Click the [<Object>] ",Click,,,User_Settings
+5,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+6,User_Signout,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,User_Settings
+7,User_Signout,"Click the [<Object>] ",Click,,,User_Settings
+8,Browser,Wait for Page to be loaded,waitForPageLoaded,,,
+9,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+10,Browser,"Take a Screen Shot ",takeScreenshot,,,
+11,UserLogin_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Login-Page
+12,Browser,To delete all the cookies,ClearCache,,,
