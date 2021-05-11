@@ -1,0 +1,9 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,"Refresh current page ",refreshDriver,,,
+2,Browser,"Take a Screen Shot ",takeScreenshot,,,
+3,Search_BTN,"Wait for [<Object>] to be visible ",waitForElementToBeVisible,,,Task_Queue
+4,Search_BTN,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,TaskQueue_Column:Status,,Task_Queue
+5,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
+6,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,Login-Page
+7,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+8,Browser,"Take a Screen Shot ",takeScreenshot,,,

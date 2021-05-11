@@ -1,0 +1,17 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Docview,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+2,Docview,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ARender_FilePreview
+"//3",FileName,,verifyElementDisplayed,,,ARender_FilePreview
+4,Browser,Switch to frame which has index: [<Data>],switchToFrameByIndex,@0,,
+"//5",ARender_Logo,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+"//6",ARender_Logo,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ARender_FilePreview
+"//7",DocManager_BTN,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+"//8",AnnotationManager_BTN,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+"//9",RefreshAnnotation_BTN,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+10,ImageProcessing_BTN,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+11,PageNav1,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+12,TotalPageCount,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+13,Showmore_BTN,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+14,Scrolldocumentview,Assert if [<Object>] is enabled on the current page,assertElementEnabled,,,ARender_FilePreview
+15,Browser,"Take a Screen Shot ",takeScreenshot,,,
+16,Browser,Switch to Window by Index: [<Data>],switchToWindowByIndex,@0,,

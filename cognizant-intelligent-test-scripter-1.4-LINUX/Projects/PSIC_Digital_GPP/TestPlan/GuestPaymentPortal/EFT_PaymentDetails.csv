@@ -1,0 +1,7 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Routing_Number,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:Routing_No,,GuestPaymentPortal
+2,Account_Number,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:Acc_No,,GuestPaymentPortal
+3,Account_Holder_Name,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:Acc_HolderName,,GuestPaymentPortal
+4,Proceed_to_Payment,Click on [<Object>],clickByJS,,,GuestPaymentPortal
+5,Browser,Wait for [<Data>] milli seconds,pause,@10000,,
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,

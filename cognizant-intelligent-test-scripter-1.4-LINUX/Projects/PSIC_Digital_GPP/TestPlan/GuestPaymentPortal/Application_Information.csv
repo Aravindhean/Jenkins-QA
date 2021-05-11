@@ -1,0 +1,27 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,FirstName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DC:FirstName,,Duckcreek_Policy
+2,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+3,LastName_TB,Enter the value [<Data>] in the Field [<Object>],PSIC_Set,DC:LastName,,Duckcreek_Policy
+4,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+5,Suffix,Enter the value [<Data>] in the Field [<Object>],PSIC_Set,DC:Suffix,,Duckcreek_Policy
+6,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+7,Address1_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:Address1,,Duckcreek_Policy
+8,Address2_TB,Enter the value [<Data>] in the Field [<Object>],PSIC_Set,DC:Address2,,Duckcreek_Policy
+9,City_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:City,,Duckcreek_Policy
+10,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+11,Zipcode_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:Zipcode,,Duckcreek_Policy
+12,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+13,Zipcode_TB,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,DC:Zipcode,,Duckcreek_Policy
+14,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+15,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+16,ResidingPeriod_DD,Enter the value [<Data>] in the Field [<Object>],setByJS,DC:ResidingPeriod,,Duckcreek_Policy
+17,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+18,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+19,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@20,,
+"//20",Browser,"Execute Resuable if mentioned in the data sheet in the format Scenario|TestCase ",PSIC_ExecuteReusable,DC:ResidingPeriod_Reusable,,
+21,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@20,,
+22,Browser,"Execute Resuable if mentioned in the data sheet in the format Scenario|TestCase ",PSIC_ExecuteReusable,DC:ValidateAddress1ReUsable,,
+23,Activepersonal_DD,Clear the element [<Object>],clearByJS,,,Duckcreek_Policy
+24,Activepersonal_DD,Set [<Data>] on [<Object>],setByJS,DC:AutoPolicy,,Duckcreek_Policy
+25,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@20,,
+26,Execute,,GuestPaymentPortal:Page_Navigation,,,

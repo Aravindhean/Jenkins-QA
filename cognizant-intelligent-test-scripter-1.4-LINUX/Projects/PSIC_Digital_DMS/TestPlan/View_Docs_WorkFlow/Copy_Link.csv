@@ -1,0 +1,9 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,LinkCopied_Icon,Click on [<Object>],clickByJS,,,ViewDocuments
+2,LinkCopy_Header,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,ViewDocuments
+3,LinkCopyUrl,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,ViewDocuments
+4,LinkCopyUrl,Store in variable true or false based on presence of text in [<Object>] element -> [<Data>],storeTextPresent,ViewDocument:URL,%Link%,ViewDocuments
+5,LinkCopyUrl,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,ViewDocument:URL,,ViewDocuments
+6,LinkCopy_BTN,Click on [<Object>],clickByJS,,,ViewDocuments
+7,Close_BTN,Click on [<Object>],clickByJS,,,ViewDocuments
+8,Browser,"Take a Screen Shot ",takeScreenshot,,,

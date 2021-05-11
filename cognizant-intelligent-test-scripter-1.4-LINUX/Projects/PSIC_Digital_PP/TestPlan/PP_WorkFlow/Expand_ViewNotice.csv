@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Expanded_ViewNotice,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,PP_TaskCenter
+2,Expanded_ViewNotice,Click the [<Object>] if it is displayed,ClickIfVisible,,,PP_TaskCenter
+3,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,

@@ -1,0 +1,28 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,GuestPayment:URL,,
+2,DC_Username,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:UserName,,GuestPaymentPortal
+3,DC_Password,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:Password,,GuestPaymentPortal
+4,Login,"Click the [<Object>] ",Click,,,GuestPaymentPortal
+5,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,
+7,ApplicationName_DD,"Click the [<Object>] ",Click,,,GuestPaymentPortal
+8,ApplicationName_DD,Enter the value [<Data>] in the Field [<Object>],Set,GuestPayment:Application,,GuestPaymentPortal
+9,Browser,Wait for [<Data>] milli seconds,sendKeysToWindow,@TAB,,
+10,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+11,BillingSearch_DD,Clear the element [<Object>],clearByJS,,,GuestPaymentPortal
+12,BillingSearch_DD,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,GuestPayment:SearchbyPolicyNo,,GuestPaymentPortal
+13,Browser,"Take a Screen Shot ",takeScreenshot,,,
+14,Browser,Wait for [<Data>] milli seconds,sendKeysToWindow,@TAB,,
+15,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+16,Searchingfor,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,Runtime_Data:PolicyNumber,,GuestPaymentPortal
+17,Browser,"Take a Screen Shot ",takeScreenshot,,,
+18,Browser,Wait for [<Data>] milli seconds,sendKeysToWindow,@TAB,,
+19,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+20,Search_BTN,Click on [<Object>],clickByJS,,,GuestPaymentPortal
+21,Browser,"Take a Screen Shot ",takeScreenshot,,,
+22,Date,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:DC_Date,,GuestPaymentPortal
+23,PaymentMethod,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:DC_PaymentMethod,,GuestPaymentPortal
+24,Amount,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:Amount,,GuestPaymentPortal
+25,PaymentMethod,Assert if [<Object>]'s Text StartsWith [Ignorecase] [<Data>],assertElementTextIStartsWith,Runtime_Data:PaymentMethod,,GuestPaymentPortal
+26,Amount,Assert if [<Object>]'s Text Equals [<Data>],assertElementTextEquals,Runtime_Data:Amount_Txt,,GuestPaymentPortal
+27,Browser,"Take a Screen Shot ",takeScreenshot,,,

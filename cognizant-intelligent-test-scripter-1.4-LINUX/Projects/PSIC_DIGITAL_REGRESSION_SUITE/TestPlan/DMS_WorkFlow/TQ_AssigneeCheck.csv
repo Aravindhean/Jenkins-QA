@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Assignee_Check,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,Claims_RuntimeData:Assignee,REPLACE,Task_Queue
+2,Assignee_Check,Assert if [<Object>]'s Text Equals [Ignorecase] [<Data>],assertElementTextIEquals,Claims_RuntimeData:Assignee,,Task_Queue
+3,Assignee_Check,"Assert if [<Object>] contains <Object2> ",assertElementDisplayed,,,Task_Queue
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,

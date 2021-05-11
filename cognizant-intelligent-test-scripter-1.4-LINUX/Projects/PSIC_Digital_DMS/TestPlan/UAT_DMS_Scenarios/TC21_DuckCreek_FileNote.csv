@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,DMS_WorkFlow:DC_Login,,,
+2,Browser,Switch to frame which has index: [<Data>],switchToFrameByIndex,@0,,
+3,Execute,,DMS_WorkFlow:DC_SearchClaimNum,,,

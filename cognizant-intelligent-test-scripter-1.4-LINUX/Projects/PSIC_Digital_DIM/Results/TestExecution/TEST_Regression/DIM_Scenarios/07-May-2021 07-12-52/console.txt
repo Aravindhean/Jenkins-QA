@@ -1,0 +1,100 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : ${project.version}
+java.runtime.name    : OpenJDK Runtime Environment
+java.version         : 11.0.11
+java.home            : /usr/lib/jvm/java-11-amazon-corretto.x86_64
+os.name              : Linux
+os.arch              : amd64
+os.version           : 4.14.231-173.360.amzn2.x86_64
+file.encoding        : UTF-8
+========================
+Run Started on Fri May 07 07:12:52 PDT 2021
+Loading Browser Profile
+Loading RunManager
+[Scenario:TEST_DIM_Scenarios] [TestCase: 16.Errorvalidation_UserLogin] [Description: 16.Errorvalidation_UserLogin] [Browser: Chrome Headless] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//TEST_Regression/DIM_Scenarios]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Run Manager true
+Continue Execution true
+Shutting Down Thread as there is no need for SelectiveThreading
+Inside Task Run
+Running Iteration 1
+Launching Chrome Headless
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 7963
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620396772.929][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+2021-05-07 07:12:52:05S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Headless Launched
+Step:1   | Object: Browser | Action: Open | Input: DIM_Login:URL | Conditon:  | @07-May-2021 07:12:52.052
+[DONE]   | Opened Url: https://test.psicdemo.com/psic/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @07-May-2021 07:13:02.002
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: waitForPageLoaded | Input:  | Conditon:  | @07-May-2021 07:13:02.002
+[DONE]   | Page load completed in stipulated time
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @07-May-2021 07:13:02.002
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:2   | Object: UserName_TB | Action: PSIC_Set | Input: DIM_Login:Username | Conditon:  | @07-May-2021 07:13:07.007
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 11 ms
+Step:3   | Object: Password_TB | Action: PSIC_Set | Input: DIM_Login:Password | Conditon:  | @07-May-2021 07:13:07.007
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 10 ms
+Step:4   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @07-May-2021 07:13:07.007
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 10 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:5   | Object: Username_Error | Action: assertElementDisplayed | Input:  | Conditon:  | @07-May-2021 07:13:07.007
+Using @xpath [//*[text()="Please enter a username"]], Object 'Username_Error' Found in 16 ms
+[PASS]   | Element [Username_Error] is Displayed
+
+===================================================================================================
+
+Step:6   | Object: Password_Error | Action: assertElementDisplayed | Input:  | Conditon:  | @07-May-2021 07:13:08.008
+Using @xpath [//*[text()="Please enter a password"]], Object 'Password_Error' Found in 10 ms
+[PASS]   | Element [Password_Error] is Displayed
+
+===================================================================================================
+
+Step:7   | Object: EmptyLogin_Error | Action: assertElementDisplayed | Input:  | Conditon:  | @07-May-2021 07:13:10.010
+Using @xpath [//*[text()="We found some errors. Please review the form and make corrections."]], Object 'EmptyLogin_Error' Found in 11 ms
+[PASS]   | Element [EmptyLogin_Error] is Displayed
+
+===================================================================================================
+
+
+---------------------------------------------------
+Testcase Name        : TEST_DIM_Scenarios:16.Errorvalidation_UserLogin
+Executed Steps       : 8
+Passed Steps         : 8
+Failed Steps         : 0
+Time Taken           : 00:00:18
+-----------------------------------------------------
+
+Run Finished on Fri May 07 07:13:11 PDT 2021
+-----------------------------------------------------
+ExecutionDate        : 07-May-2021 07-12-52
+Executed TestCases   : 1
+Passed TestCases     : 1
+Failed TestCases     : 0
+Time Taken           : 00:00:18
+ReportPath           : file:////home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/Projects/PSIC_Digital_DIM/Results/TestExecution/TEST_Regression/DIM_Scenarios/07-May-2021 07-12-52/summary.html
+-----------------------------------------------------

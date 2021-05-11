@@ -1,0 +1,15 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,DOB,Enter the value [<Data>] in the Field [<Object>],PSIC_setByJS,DC:DOB,,Duckcreek_Policy
+2,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+3,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+4,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+5,PhoneNo,Enter the value [<Data>] in the Field [<Object>],PSIC_setByJS,DC:PhoneNum,,Duckcreek_Policy
+6,Browser,Wait for [<Data>] milli seconds,pause,@2000,,
+7,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+8,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+9,AdditionalPhoneNo,Enter the value [<Data>] in the Field [<Object>],PSIC_Set,DC:AdditionalPhoneNum,,Duckcreek_Policy
+10,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+11,Email,Enter the value [<Data>] in the Field [<Object>],PSIC_Set,DC:Email,,Duckcreek_Policy
+12,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+13,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+14,Execute,,GuestPaymentPortal:Page_Navigation,,,

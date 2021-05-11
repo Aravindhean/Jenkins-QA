@@ -1,0 +1,9 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,DIM_WorkFlow:SignupandUserApproval,,,
+2,Browser,Wait for [<Data>] milli seconds,pause,@900000,,
+3,Execute,,DIM_WorkFlow:LoginforDeleteUser,,,
+4,Execute,,DIM_WorkFlow:Enable_MFA,,,
+5,Execute,,DIM_WorkFlow:Signout,,,
+6,Execute,,DIM_WorkFlow:Enabled_MFA_EmailSetup,,,
+7,Execute,,DIM_WorkFlow:Enable_MFA,,,
+8,Execute,,DIM_WorkFlow:Signout,,,

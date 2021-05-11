@@ -1,0 +1,13 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Request Scan,Click on [<Object>],clickByJS,,,TaskQueue_DetailedPage
+2,Browser,"Take a Screen Shot ",takeScreenshot,,,
+3,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+4,Confirm_BTN,Click on [<Object>],clickByJS,,,TaskQueue_DetailedPage
+5,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,
+7,Rescan_SuccessMsg,Assert if [<Object>] element is displayed,assertElementDisplayed,,,TaskQueue_DetailedPage
+8,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+9,Browser,"Take a Screen Shot ",takeScreenshot,,,
+10,Done_BTN,"Click the [<Object>] ",Click,,,TaskQueue_DetailedPage
+11,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+12,Browser,"Take a Screen Shot ",takeScreenshot,,,

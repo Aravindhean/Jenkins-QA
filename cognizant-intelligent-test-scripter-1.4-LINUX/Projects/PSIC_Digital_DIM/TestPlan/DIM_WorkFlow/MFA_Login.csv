@@ -1,0 +1,24 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,DIM_Login:URL,,
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+3,UserLogin_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Login-Page
+4,UserName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DIM_Login:Username,,Login-Page
+5,Password_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_SetDecrypt,DIM_Login:Password,,Login-Page
+6,Login_BTN,"Click the [<Object>] ",Click,,,Login-Page
+7,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,Login-Page
+8,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+9,SendCode_BTN,"Click the [<Object>] ",Click,,,Login-Page
+10,Browser,Add a variable to access within testcase,AddVar,DIM_Login:Mail_UserID,%OutlookUsername%,
+11,Browser,Add a variable to access within testcase,AddVar,DIM_Login:Mail_Pwd,%OutlookPassword%,
+12,Browser,Read the UserName and Password from user-defined values,PSIC_ReadUserName,,"%OutlookUsername%,%OutlookPassword%",
+13,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+14,Browser,Read OTP from gmail,PSIC_ReadSendOTP,RuntimeData:OTP,%ReadOTP%,
+15,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,RuntimeData:OTP,%ReadOTP%,
+16,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+17,OTP_TXT,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,RuntimeData:OTP,,Login-Page
+18,Browser,"Take a Screen Shot ",takeScreenshot,,,
+19,Verify_BTN,"Click the [<Object>] ",Click,,,Login-Page
+20,Browser,Wait for [<Data>] milli seconds,pause,@5000,,Login-Page
+21,Browser,"Take a Screen Shot ",takeScreenshot,,,
+22,Browser,Delete the OTP,PSIC_DelOTPMail,,,
+23,Execute,,DIM_WorkFlow:Signout,,,

@@ -1,0 +1,24 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,ClaimNo_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+2,ClaimNo_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:ClaimNo,,CompletedTask_Hidden
+3,ClaimOwner_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+4,ClaimOwner_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Claim_Owner,,CompletedTask_Hidden
+5,Sender_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+6,Sender_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Sender,,CompletedTask_Hidden
+7,From_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+8,From_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:From,,CompletedTask_Hidden
+9,Subject_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+10,Subject_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Subject,,CompletedTask_Hidden
+11,Body_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+12,Body_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Body,,CompletedTask_Hidden
+13,Claimant_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+14,Claimant_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Claimant,,CompletedTask_Hidden
+15,PolicyNumber_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+16,PolicyNumber_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:PolicyNumber,,CompletedTask_Hidden
+17,Source_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+18,Source_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Source,,CompletedTask_Hidden
+19,DateofLoss_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+20,DateofLoss_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:DateofLoss,,CompletedTask_Hidden
+21,PrimaryInsured_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+22,PrimaryInsured_Hidden,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:Primary_Insured,,CompletedTask_Hidden
+23,Browser,"Take a Screen Shot ",takeScreenshot,,,

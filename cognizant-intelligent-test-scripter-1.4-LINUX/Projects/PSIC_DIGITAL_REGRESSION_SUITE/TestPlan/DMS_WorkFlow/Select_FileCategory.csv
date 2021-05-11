@@ -1,0 +1,13 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,File_DD1,Count the number of rows in a web table and store it in variable,PSIC_getFileDDvalue,Claims_RuntimeData:CountColumnUI,%File%,TaskQueue_DetailedPage
+2,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,Claims_RuntimeData:CountColumnUI,%File%,
+3,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@20,,
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,
+5,Doc_Category,Count the number of rows in a web table and store it in variable,PSIC_getDocCategoryDDvalue,Claims_RuntimeData:CountColumnUI,%DocCategory%,TaskQueue_DetailedPage
+6,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,Claims_RuntimeData:CountColumnUI,%DocCategory%,
+7,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@20,,
+8,Browser,"Take a Screen Shot ",takeScreenshot,,,TaskQueue_DetailedPage
+9,Browser,"Take a Screen Shot ",takeScreenshot,,,
+10,DocType_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,TaskQueue_DetailedPage
+11,Doc_SubCategory,Count the number of rows in a web table and store it in variable,PSIC_getDocSubCategoryDDvalue,Claims_RuntimeData:CountColumnUI,%DocSubCategory%,TaskQueue_DetailedPage
+12,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,Claims_RuntimeData:CountColumnUI,%DocSubCategory%,

@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,DIM_WorkFlow:User_Login,,,
+2,Execute,,DIM_WorkFlow:Settings,,,
+3,Browser,switching to window by title [<Data>],switchToWindowByTitleContains,@Settings,,
+4,Execute,,DIM_WorkFlow:OKTA_ChangepwdError,,,
+5,Execute,,DIM_WorkFlow:User_Signout,,,

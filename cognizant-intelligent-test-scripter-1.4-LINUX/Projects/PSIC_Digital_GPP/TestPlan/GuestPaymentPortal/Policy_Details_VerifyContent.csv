@@ -1,0 +1,18 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Down-Arrow,"Click the [<Object>] ",Click,,,GuestPaymentPortal
+2,Browser,"Take a Screen Shot ",takeScreenshot,,,
+3,Policy_Number_Txt,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,GuestPayment:PolicyNo,,GuestPaymentPortal
+4,Acc_No_Txt,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,GuestPayment:AccountNumber,,GuestPaymentPortal
+5,DueDate,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+6,DueDate,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:DueDate,,GuestPaymentPortal
+7,PolicyStatus,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+8,PolicyStatus,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:PolicyStatus,,GuestPaymentPortal
+9,AutoPayStatus,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+10,AutoPayStatus,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:AutoPayStatus,,GuestPaymentPortal
+11,Address,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+12,Address,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:Address,,GuestPaymentPortal
+13,AmountDue,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+14,AmountDue,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:AmountDue,,GuestPaymentPortal
+15,BalanceDue,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+16,BalanceDue,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:BalanceDue,,GuestPaymentPortal
+17,Browser,"Take a Screen Shot ",takeScreenshot,,,

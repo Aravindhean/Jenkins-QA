@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Policy,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,PolicyRelatedInfo:Policy,,Policy_RelatedInfo_ViewNotice
+2,Insured,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,PolicyRelatedInfo:Insured,,Policy_RelatedInfo_ViewNotice
+3,Program,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,PolicyRelatedInfo:Program,,Policy_RelatedInfo_ViewNotice
+4,Address,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,PolicyRelatedInfo:Address,,Policy_RelatedInfo_ViewNotice
+5,Browser,"Take a Screen Shot ",takeScreenshot,,,
