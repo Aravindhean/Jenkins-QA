@@ -1,2 +1,0 @@
-# Jenkins-QA
-Automation Scripts
