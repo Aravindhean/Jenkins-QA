@@ -1,3 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,METADATA_Header,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,TaskQueue_DetailedPage
-2,INFORMATION_Header,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,TaskQueue_DetailedPage

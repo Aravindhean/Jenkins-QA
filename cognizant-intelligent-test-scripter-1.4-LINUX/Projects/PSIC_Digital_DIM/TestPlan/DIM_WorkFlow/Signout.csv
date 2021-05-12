@@ -1,7 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Profile_Icon,"Click the [<Object>] ",Click,,,User_Settings
-2,User_Signout,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,User_Settings
-3,User_Signout,"Click the [<Object>] ",Click,,,User_Settings
-4,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
-5,Browser,"Take a Screen Shot ",takeScreenshot,,,
-6,UserLogin_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Login-Page

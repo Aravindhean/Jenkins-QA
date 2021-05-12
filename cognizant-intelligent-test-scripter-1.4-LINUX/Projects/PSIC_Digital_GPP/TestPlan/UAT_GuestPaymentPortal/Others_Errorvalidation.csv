@@ -1,3 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Others_amount_exceed_errormsg,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GuestPaymentPortal
-2,Browser,"Take a Screen Shot ",takeScreenshot,,,

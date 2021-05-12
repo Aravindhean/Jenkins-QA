@@ -1,3 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,OpenStatus_Check,"Assert if [<Object>] contains <Object2> ",assertElementDisplayed,,,Task_Queue
-2,OpenStatus_Check,Assert if [<Object>]'s Text Equals [Ignorecase] [<Data>],assertElementTextIEquals,@Open,,Task_Queue

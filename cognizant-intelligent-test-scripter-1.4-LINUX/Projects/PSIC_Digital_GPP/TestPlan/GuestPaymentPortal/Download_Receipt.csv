@@ -1,6 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Download_Receipt,"Click the [<Object>] ",Click,,,GuestPaymentPortal
-2,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
-3,Browser,"Take a Screen Shot ",takeScreenshot,,,
-4,Browser,Scroll to bottom,scrollToBottom,,,
-5,Browser,"Take a Screen Shot ",takeScreenshot,,,

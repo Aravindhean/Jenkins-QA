@@ -1,2 +1,0 @@
-Scenario,Flow,Iteration,SubIteration,ProducerCode,Role,FirstName,LastName,Email,Phone_office,Phone_cell,UserID,Password,Confirm_Password
-DIM_Scenarios,12.SignUp_NewUser,1,1,B00088,PRINCIPAL,A,B,doolittle22401@gmail.com,8564665412,9566274235,AASE,Pass@100,Pass@100
