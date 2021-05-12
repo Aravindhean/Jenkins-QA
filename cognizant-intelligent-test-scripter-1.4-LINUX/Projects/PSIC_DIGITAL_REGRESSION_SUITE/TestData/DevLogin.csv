@@ -1,0 +1,16 @@
+Scenario,Flow,Iteration,SubIteration,Test_URL,Test_UserName,Test_Password,eMail_ID,Incorrect_Pwd,UserName
+PSIC_DevRegression,1.AP_ACCESS,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,2.OneSpot_ACCESS,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,3.VALIDATE_PhoneNo_SQL,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,4.VALIDATE_eMail_SQL,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",doolittle22401@gmail.com,,
+PSIC_DevRegression,5.VALIDATE_Password_SQL,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",doolittle22401@gmail.com,,
+PSIC_DevRegression,6.Setup_eMail_MFA,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",doolittle22401@gmail.com,,
+PSIC_DevRegression,7.Forgot_Password,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",doolittle22401@gmail.com,,
+PSIC_DevRegression,8.Account_Unlock_eMail,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,RAFAEL65,RAFEAL65
+PSIC_DevRegression,9.MFA_EnableIcon,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,10.Login_MFA_AfterSetupEmail,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,11.User_Mgmt_Approval,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,12.SignUp_NewUser,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,13.User_Mgmt_Deny,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,14.User_Mgmt_UpdateUsers,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,
+PSIC_DevRegression,15.User_Mgmt_DEACTIVATE,1,1,"#DevUser_Login","#DevUser_Login","#DevUser_Login",,,

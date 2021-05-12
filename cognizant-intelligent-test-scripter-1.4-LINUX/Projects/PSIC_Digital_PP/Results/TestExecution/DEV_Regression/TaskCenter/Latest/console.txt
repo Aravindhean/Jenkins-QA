@@ -1,0 +1,834 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : ${project.version}
+java.runtime.name    : OpenJDK Runtime Environment
+java.version         : 11.0.10
+java.home            : /usr/lib/jvm/java-11-amazon-corretto.x86_64
+os.name              : Linux
+os.arch              : amd64
+os.version           : 4.14.219-164.354.amzn2.x86_64
+file.encoding        : UTF-8
+========================
+Run Started on Fri Mar 19 00:38:59 PDT 2021
+Loading Browser Profile
+Loading RunManager
+[Scenario:UAT_ProducerPortal_Scenarios] [TestCase: 1.TaskCenter_PendingCancellation] [Description: 1.TaskCenter_PendingCancellation] [Browser: Chrome] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//UAT_Regression/TaskCenter]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Run Manager true
+Continue Execution true
+Shutting Down Thread as there is no need for SelectiveThreading
+Inside Task Run
+Running Iteration 1
+Launching Chrome
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 6373
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+2021-03-19 00:38:59:03S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Database | Action: initDBConnection | Input:  | Conditon:  | @19-Mar-2021 00:38:59.059
+[PASS]   |  Connected with jTDS Type 4 JDBC Driver for MS SQL Server and Sybase
+Driver version 1.3.1 
+Database product name Microsoft SQL Server
+Database product version 13.00.5865
+
+===================================================================================================
+
+Step:2   | Object: Database | Action: executeSelectQuery | Input: ODS_SQLDB:SQL_Query | Conditon:  | @19-Mar-2021 00:38:59.059
+[DONE]   |  Executed Select Query
+
+===================================================================================================
+
+Step:3   | Object: Database | Action: GetValuebyQuery | Input: ODS_SQLDB:SQL_Query | Conditon: %PolicyNumber% | @19-Mar-2021 00:38:59.059
+[PASS]   | ENT 1184847-13 Got value by Query
+
+===================================================================================================
+
+Adding to runTimeVars %PolicyNumber%:ENT 1184847-13
+Step:4   | Object: Browser | Action: storeVariableInDataSheet | Input: ODS_SQLDB:PolicyNo | Conditon: %PolicyNumber% | @19-Mar-2021 00:39:00.000
+Getting runTimeVar %PolicyNumber%
+%PolicyNumber%
+Getting runTimeVar %PolicyNumber%
+[DONE]   | Value of variable %PolicyNumber% has been stored into the data sheet
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: Open | Input: Producer_Login:TaskCenter_Url | Conditon:  | @19-Mar-2021 00:39:00.000
+[DONE]   | Opened Url: https://portal.stage.pacificspecialty.com/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @19-Mar-2021 00:39:09.009
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:09.009
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 11 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: Producer_Login:TaskCenter_Username | Conditon:  | @19-Mar-2021 00:39:11.011
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 12 ms
+[DONE]   | Entered Text 'MG_B99996test1' on 'UserName_TB'
+
+===================================================================================================
+
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: Producer_Login:TaskCenter_Password | Conditon:  | @19-Mar-2021 00:39:11.011
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 9 ms
+[DONE]   | Entered Text '********' on 'Password_TB'
+
+===================================================================================================
+
+Step:6   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @19-Mar-2021 00:39:11.011
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 12 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:7   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:39:11.011
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:8   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:39:16.016
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:9   | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:17.017
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 10 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:10  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:39:18.018
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:11  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:19.019
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 6 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:1   | Object: Dashboard_TaskCenter | Action: clickByJS | Input:  | Conditon:  | @19-Mar-2021 00:39:21.021
+Using @xpath [//div[@class="dashboard-card task-center"]], Object 'Dashboard_TaskCenter' Found in 10 ms
+[DONE]   | Clicked on Dashboard_TaskCenter
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:39:21.021
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:1   | Object: PSIC_Logo | Action: waitForElementToBePresent | Input:  | Conditon:  | @19-Mar-2021 00:39:26.026
+Using @xpath [//*[@class="psic-logo"]], Object 'PSIC_Logo' Found in 10 ms
+[PASS]   | 'PSIC_Logo' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:2   | Object: PSIC_Logo | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:27.027
+Using @xpath [//*[@class="psic-logo"]], Object 'PSIC_Logo' Found in 8 ms
+[PASS]   | Element [PSIC_Logo] is Displayed
+
+===================================================================================================
+
+Step:3   | Object: Profile_Icon | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:29.029
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 11 ms
+[PASS]   | Element [Profile_Icon] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: Homeicon | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:31.031
+Using @xpath [//*[@class="home-icon"]], Object 'Homeicon' Found in 10 ms
+[PASS]   | Element [Homeicon] is Displayed
+
+===================================================================================================
+
+Step:5   | Object: TaskCenter_Header | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:32.032
+Using @xpath [//*[@class='header' and contains(text(),'Task Center')]], Object 'TaskCenter_Header' Found in 10 ms
+[PASS]   | Element [TaskCenter_Header] is Displayed
+
+===================================================================================================
+
+Step:6   | Object: Headline | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:34.034
+Using @xpath [//label[@class="headline"]], Object 'Headline' Found in 11 ms
+[PASS]   | Element [Headline] is Displayed
+
+===================================================================================================
+
+Step:7   | Object: Headline | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:HeadLine | Conditon:  | @19-Mar-2021 00:39:35.035
+Using @xpath [//label[@class="headline"]], Object 'Headline' Found in 7 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [Policy information is updated weekdays at approximately 9:00am PST. The data shown is as of 03/17/2021.] is stored in TaskCenter_RuntimeData:HeadLine
+
+===================================================================================================
+
+Step:1   | Object: Searchbypolicy | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:39:36.036
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Searchbypolicy]
+
+===================================================================================================
+
+Step:2   | Object: Searchbypolicy | Action: PSIC_Set | Input: ODS_SQLDB:PolicyNo | Conditon:  | @19-Mar-2021 00:39:36.036
+Using @xpath [//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//*[@placeholder="Search"]], Object 'Searchbypolicy' Found in 10 ms
+[DONE]   | Entered Text 'ENT 1184847-13' on 'Searchbypolicy'
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: sendKeysToWindow | Input: @ENTER | Conditon:  | @19-Mar-2021 00:39:36.036
+[DONE]   | Keys Submitted
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:39:36.036
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:39:41.041
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:6   | Object: PolicyNumber | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:39:42.042
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - PolicyNumber]
+
+===================================================================================================
+
+Step:7   | Object: PolicyNumber | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:PolicyNo | Conditon:  | @19-Mar-2021 00:39:42.042
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[1]/span], Object 'PolicyNumber' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [ENT 1184847-13] is stored in TaskCenter_RuntimeData:PolicyNo
+
+===================================================================================================
+
+Step:8   | Object: Insured | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:39:42.042
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Insured]
+
+===================================================================================================
+
+Step:9   | Object: Insured | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Insured | Conditon:  | @19-Mar-2021 00:39:42.042
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[2]/span], Object 'Insured' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [STUART T FERMENICK] is stored in TaskCenter_RuntimeData:Insured
+
+===================================================================================================
+
+Step:10  | Object: Reason | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:39:42.042
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Reason]
+
+===================================================================================================
+
+Step:11  | Object: Reason | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Program | Conditon:  | @19-Mar-2021 00:39:42.042
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[3]/span], Object 'Reason' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [Non-Payment] is stored in TaskCenter_RuntimeData:Program
+
+===================================================================================================
+
+Step:12  | Object: Due | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:39:42.042
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Due]
+
+===================================================================================================
+
+Step:13  | Object: Due | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Due | Conditon:  | @19-Mar-2021 00:39:42.042
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[4]/span], Object 'Due' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [01/02/2021] is stored in TaskCenter_RuntimeData:Due
+
+===================================================================================================
+
+Step:1   | Object: Profile_Icon | Action: clickByJS | Input:  | Conditon:  | @19-Mar-2021 00:39:42.042
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 7 ms
+[DONE]   | Clicked on Profile_Icon
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @19-Mar-2021 00:39:42.042
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:3   | Object: User_Signout | Action: waitForElementToBePresent | Input:  | Conditon:  | @19-Mar-2021 00:39:43.043
+Using @xpath [//span[text()=' Sign Out ']], Object 'User_Signout' Found in 10 ms
+[PASS]   | 'User_Signout' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:4   | Object: User_Signout | Action: Click | Input:  | Conditon:  | @19-Mar-2021 00:39:45.045
+Using @xpath [//span[text()=' Sign Out ']], Object 'User_Signout' Found in 7 ms
+[DONE]   | Clicking on User_Signout
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @19-Mar-2021 00:39:45.045
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:6   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:39:46.046
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:7   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:39:48.048
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 10 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Running Iteration 2
+Launching Chrome
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 26415
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+2021-03-19 00:39:50:03S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Database | Action: initDBConnection | Input:  | Conditon:  | @19-Mar-2021 00:39:50.050
+[PASS]   |  Connected with jTDS Type 4 JDBC Driver for MS SQL Server and Sybase
+Driver version 1.3.1 
+Database product name Microsoft SQL Server
+Database product version 13.00.5865
+
+===================================================================================================
+
+Step:2   | Object: Database | Action: executeSelectQuery | Input: ODS_SQLDB:SQL_Query | Conditon:  | @19-Mar-2021 00:39:50.050
+[DONE]   |  Executed Select Query
+
+===================================================================================================
+
+Step:3   | Object: Database | Action: GetValuebyQuery | Input: ODS_SQLDB:SQL_Query | Conditon: %PolicyNumber% | @19-Mar-2021 00:39:50.050
+[PASS]   | ANT 1113987-15 Got value by Query
+
+===================================================================================================
+
+Adding to runTimeVars %PolicyNumber%:ANT 1113987-15
+Step:4   | Object: Browser | Action: storeVariableInDataSheet | Input: ODS_SQLDB:PolicyNo | Conditon: %PolicyNumber% | @19-Mar-2021 00:39:51.051
+Getting runTimeVar %PolicyNumber%
+%PolicyNumber%
+Getting runTimeVar %PolicyNumber%
+[DONE]   | Value of variable %PolicyNumber% has been stored into the data sheet
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: Open | Input: Producer_Login:TaskCenter_Url | Conditon:  | @19-Mar-2021 00:39:51.051
+[DONE]   | Opened Url: https://portal.stage.pacificspecialty.com/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @19-Mar-2021 00:40:00.000
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:00.000
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 10 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: Producer_Login:TaskCenter_Username | Conditon:  | @19-Mar-2021 00:40:01.001
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 11 ms
+[DONE]   | Entered Text 'MG_B00996test1' on 'UserName_TB'
+
+===================================================================================================
+
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: Producer_Login:TaskCenter_Password | Conditon:  | @19-Mar-2021 00:40:02.002
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 10 ms
+[DONE]   | Entered Text '********' on 'Password_TB'
+
+===================================================================================================
+
+Step:6   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @19-Mar-2021 00:40:02.002
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 9 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:7   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:40:02.002
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:8   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:40:07.007
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:9   | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:08.008
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 10 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:10  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:40:09.009
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:11  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:10.010
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 7 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:1   | Object: Dashboard_TaskCenter | Action: clickByJS | Input:  | Conditon:  | @19-Mar-2021 00:40:11.011
+Using @xpath [//div[@class="dashboard-card task-center"]], Object 'Dashboard_TaskCenter' Found in 10 ms
+[DONE]   | Clicked on Dashboard_TaskCenter
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:40:11.011
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:1   | Object: PSIC_Logo | Action: waitForElementToBePresent | Input:  | Conditon:  | @19-Mar-2021 00:40:16.016
+Using @xpath [//*[@class="psic-logo"]], Object 'PSIC_Logo' Found in 10 ms
+[PASS]   | 'PSIC_Logo' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:2   | Object: PSIC_Logo | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:18.018
+Using @xpath [//*[@class="psic-logo"]], Object 'PSIC_Logo' Found in 7 ms
+[PASS]   | Element [PSIC_Logo] is Displayed
+
+===================================================================================================
+
+Step:3   | Object: Profile_Icon | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:20.020
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 10 ms
+[PASS]   | Element [Profile_Icon] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: Homeicon | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:21.021
+Using @xpath [//*[@class="home-icon"]], Object 'Homeicon' Found in 11 ms
+[PASS]   | Element [Homeicon] is Displayed
+
+===================================================================================================
+
+Step:5   | Object: TaskCenter_Header | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:23.023
+Using @xpath [//*[@class='header' and contains(text(),'Task Center')]], Object 'TaskCenter_Header' Found in 11 ms
+[PASS]   | Element [TaskCenter_Header] is Displayed
+
+===================================================================================================
+
+Step:6   | Object: Headline | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:25.025
+Using @xpath [//label[@class="headline"]], Object 'Headline' Found in 10 ms
+[PASS]   | Element [Headline] is Displayed
+
+===================================================================================================
+
+Step:7   | Object: Headline | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:HeadLine | Conditon:  | @19-Mar-2021 00:40:26.026
+Using @xpath [//label[@class="headline"]], Object 'Headline' Found in 7 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [Policy information is updated weekdays at approximately 9:00am PST. The data shown is as of 03/17/2021.] is stored in TaskCenter_RuntimeData:HeadLine
+
+===================================================================================================
+
+Step:1   | Object: Searchbypolicy | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:40:26.026
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Searchbypolicy]
+
+===================================================================================================
+
+Step:2   | Object: Searchbypolicy | Action: PSIC_Set | Input: ODS_SQLDB:PolicyNo | Conditon:  | @19-Mar-2021 00:40:26.026
+Using @xpath [//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//*[@placeholder="Search"]], Object 'Searchbypolicy' Found in 11 ms
+[DONE]   | Entered Text 'ANT 1113987-15' on 'Searchbypolicy'
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: sendKeysToWindow | Input: @ENTER | Conditon:  | @19-Mar-2021 00:40:27.027
+[DONE]   | Keys Submitted
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:40:27.027
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:40:32.032
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:6   | Object: PolicyNumber | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:40:33.033
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - PolicyNumber]
+
+===================================================================================================
+
+Step:7   | Object: PolicyNumber | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:PolicyNo | Conditon:  | @19-Mar-2021 00:40:33.033
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[1]/span], Object 'PolicyNumber' Found in 12 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [ANT 1113987-15] is stored in TaskCenter_RuntimeData:PolicyNo
+
+===================================================================================================
+
+Step:8   | Object: Insured | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:40:33.033
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Insured]
+
+===================================================================================================
+
+Step:9   | Object: Insured | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Insured | Conditon:  | @19-Mar-2021 00:40:33.033
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[2]/span], Object 'Insured' Found in 11 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [JOHN LANE] is stored in TaskCenter_RuntimeData:Insured
+
+===================================================================================================
+
+Step:10  | Object: Reason | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:40:33.033
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Reason]
+
+===================================================================================================
+
+Step:11  | Object: Reason | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Program | Conditon:  | @19-Mar-2021 00:40:33.033
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[3]/span], Object 'Reason' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [Non-Payment] is stored in TaskCenter_RuntimeData:Program
+
+===================================================================================================
+
+Step:12  | Object: Due | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:40:33.033
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Due]
+
+===================================================================================================
+
+Step:13  | Object: Due | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Due | Conditon:  | @19-Mar-2021 00:40:33.033
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[4]/span], Object 'Due' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [12/25/2020] is stored in TaskCenter_RuntimeData:Due
+
+===================================================================================================
+
+Step:1   | Object: Profile_Icon | Action: clickByJS | Input:  | Conditon:  | @19-Mar-2021 00:40:33.033
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 7 ms
+[DONE]   | Clicked on Profile_Icon
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @19-Mar-2021 00:40:33.033
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:3   | Object: User_Signout | Action: waitForElementToBePresent | Input:  | Conditon:  | @19-Mar-2021 00:40:34.034
+Using @xpath [//span[text()=' Sign Out ']], Object 'User_Signout' Found in 10 ms
+[PASS]   | 'User_Signout' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:4   | Object: User_Signout | Action: Click | Input:  | Conditon:  | @19-Mar-2021 00:40:36.036
+Using @xpath [//span[text()=' Sign Out ']], Object 'User_Signout' Found in 7 ms
+[DONE]   | Clicking on User_Signout
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @19-Mar-2021 00:40:36.036
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:6   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:40:37.037
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:7   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:39.039
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 10 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Running Iteration 3
+Launching Chrome
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 29642
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+2021-03-19 00:40:41:03S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Database | Action: initDBConnection | Input:  | Conditon:  | @19-Mar-2021 00:40:41.041
+[PASS]   |  Connected with jTDS Type 4 JDBC Driver for MS SQL Server and Sybase
+Driver version 1.3.1 
+Database product name Microsoft SQL Server
+Database product version 13.00.5865
+
+===================================================================================================
+
+Step:2   | Object: Database | Action: executeSelectQuery | Input: ODS_SQLDB:SQL_Query | Conditon:  | @19-Mar-2021 00:40:41.041
+[DONE]   |  Executed Select Query
+
+===================================================================================================
+
+Step:3   | Object: Database | Action: GetValuebyQuery | Input: ODS_SQLDB:SQL_Query | Conditon: %PolicyNumber% | @19-Mar-2021 00:40:41.041
+[PASS]   | DNT 1738938-00 Got value by Query
+
+===================================================================================================
+
+Adding to runTimeVars %PolicyNumber%:DNT 1738938-00
+Step:4   | Object: Browser | Action: storeVariableInDataSheet | Input: ODS_SQLDB:PolicyNo | Conditon: %PolicyNumber% | @19-Mar-2021 00:40:42.042
+Getting runTimeVar %PolicyNumber%
+%PolicyNumber%
+Getting runTimeVar %PolicyNumber%
+[DONE]   | Value of variable %PolicyNumber% has been stored into the data sheet
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: Open | Input: Producer_Login:TaskCenter_Url | Conditon:  | @19-Mar-2021 00:40:42.042
+[DONE]   | Opened Url: https://portal.stage.pacificspecialty.com/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @19-Mar-2021 00:40:51.051
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:51.051
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 12 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: Producer_Login:TaskCenter_Username | Conditon:  | @19-Mar-2021 00:40:52.052
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 9 ms
+[DONE]   | Entered Text 'MG_B99966test1' on 'UserName_TB'
+
+===================================================================================================
+
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: Producer_Login:TaskCenter_Password | Conditon:  | @19-Mar-2021 00:40:53.053
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 9 ms
+[DONE]   | Entered Text '********' on 'Password_TB'
+
+===================================================================================================
+
+Step:6   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @19-Mar-2021 00:40:53.053
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 9 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:7   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:40:53.053
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:8   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:40:58.058
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:9   | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:40:59.059
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 10 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:10  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:41:00.000
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:11  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:01.001
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 7 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:1   | Object: Dashboard_TaskCenter | Action: clickByJS | Input:  | Conditon:  | @19-Mar-2021 00:41:02.002
+Using @xpath [//div[@class="dashboard-card task-center"]], Object 'Dashboard_TaskCenter' Found in 10 ms
+[DONE]   | Clicked on Dashboard_TaskCenter
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:41:02.002
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:1   | Object: PSIC_Logo | Action: waitForElementToBePresent | Input:  | Conditon:  | @19-Mar-2021 00:41:07.007
+Using @xpath [//*[@class="psic-logo"]], Object 'PSIC_Logo' Found in 11 ms
+[PASS]   | 'PSIC_Logo' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:2   | Object: PSIC_Logo | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:09.009
+Using @xpath [//*[@class="psic-logo"]], Object 'PSIC_Logo' Found in 7 ms
+[PASS]   | Element [PSIC_Logo] is Displayed
+
+===================================================================================================
+
+Step:3   | Object: Profile_Icon | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:11.011
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 10 ms
+[PASS]   | Element [Profile_Icon] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: Homeicon | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:12.012
+Using @xpath [//*[@class="home-icon"]], Object 'Homeicon' Found in 10 ms
+[PASS]   | Element [Homeicon] is Displayed
+
+===================================================================================================
+
+Step:5   | Object: TaskCenter_Header | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:14.014
+Using @xpath [//*[@class='header' and contains(text(),'Task Center')]], Object 'TaskCenter_Header' Found in 10 ms
+[PASS]   | Element [TaskCenter_Header] is Displayed
+
+===================================================================================================
+
+Step:6   | Object: Headline | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:16.016
+Using @xpath [//label[@class="headline"]], Object 'Headline' Found in 10 ms
+[PASS]   | Element [Headline] is Displayed
+
+===================================================================================================
+
+Step:7   | Object: Headline | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:HeadLine | Conditon:  | @19-Mar-2021 00:41:17.017
+Using @xpath [//label[@class="headline"]], Object 'Headline' Found in 7 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [Policy information is updated weekdays at approximately 9:00am PST. The data shown is as of 03/17/2021.] is stored in TaskCenter_RuntimeData:HeadLine
+
+===================================================================================================
+
+Step:1   | Object: Searchbypolicy | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:41:17.017
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Searchbypolicy]
+
+===================================================================================================
+
+Step:2   | Object: Searchbypolicy | Action: PSIC_Set | Input: ODS_SQLDB:PolicyNo | Conditon:  | @19-Mar-2021 00:41:17.017
+Using @xpath [//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//*[@placeholder="Search"]], Object 'Searchbypolicy' Found in 10 ms
+[DONE]   | Entered Text 'DNT 1738938-00' on 'Searchbypolicy'
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: sendKeysToWindow | Input: @ENTER | Conditon:  | @19-Mar-2021 00:41:18.018
+[DONE]   | Keys Submitted
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @19-Mar-2021 00:41:18.018
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:41:23.023
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:6   | Object: PolicyNumber | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:41:24.024
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - PolicyNumber]
+
+===================================================================================================
+
+Step:7   | Object: PolicyNumber | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:PolicyNo | Conditon:  | @19-Mar-2021 00:41:24.024
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[1]/span], Object 'PolicyNumber' Found in 11 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [DNT 1738938-00] is stored in TaskCenter_RuntimeData:PolicyNo
+
+===================================================================================================
+
+Step:8   | Object: Insured | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:41:24.024
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Insured]
+
+===================================================================================================
+
+Step:9   | Object: Insured | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Insured | Conditon:  | @19-Mar-2021 00:41:24.024
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[2]/span], Object 'Insured' Found in 10 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [VICTOR E BURTON] is stored in TaskCenter_RuntimeData:Insured
+
+===================================================================================================
+
+Step:10  | Object: Reason | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:41:24.024
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Reason]
+
+===================================================================================================
+
+Step:11  | Object: Reason | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Program | Conditon:  | @19-Mar-2021 00:41:24.024
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[3]/span], Object 'Reason' Found in 11 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [Non-Payment] is stored in TaskCenter_RuntimeData:Program
+
+===================================================================================================
+
+Step:12  | Object: Due | Action: setObjectProperty | Input: TaskCenter:CardName | Conditon: REPLACE | @19-Mar-2021 00:41:24.024
+[DONE]   | Setting Object Property for REPLACE with Pending Cancellation for Object [PP_TaskCenter - Due]
+
+===================================================================================================
+
+Step:13  | Object: Due | Action: storeTextinDataSheet | Input: TaskCenter_RuntimeData:Due | Conditon:  | @19-Mar-2021 00:41:24.024
+Using @xpath [(//div[@class="title" and contains(text(),'Pending Cancellation')]//parent::div//div[@class="tasks-search"]//parent::div//div[@class="table-content"]//div[@class="row no-gutters table-row"])[1]//div[4]/span], Object 'Due' Found in 9 ms
+Updating value in SubIteration 1
+[DONE]   | Element text [12/08/2020] is stored in TaskCenter_RuntimeData:Due
+
+===================================================================================================
+
+Step:1   | Object: Profile_Icon | Action: clickByJS | Input:  | Conditon:  | @19-Mar-2021 00:41:24.024
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 7 ms
+[DONE]   | Clicked on Profile_Icon
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @19-Mar-2021 00:41:24.024
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:3   | Object: User_Signout | Action: waitForElementToBePresent | Input:  | Conditon:  | @19-Mar-2021 00:41:25.025
+Using @xpath [//span[text()=' Sign Out ']], Object 'User_Signout' Found in 10 ms
+[PASS]   | 'User_Signout' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:4   | Object: User_Signout | Action: Click | Input:  | Conditon:  | @19-Mar-2021 00:41:27.027
+Using @xpath [//span[text()=' Sign Out ']], Object 'User_Signout' Found in 8 ms
+[DONE]   | Clicking on User_Signout
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @19-Mar-2021 00:41:27.027
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:6   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @19-Mar-2021 00:41:28.028
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:7   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @19-Mar-2021 00:41:30.030
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 10 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+
+---------------------------------------------------
+Testcase Name        : UAT_ProducerPortal_Scenarios:1.TaskCenter_PendingCancellation
+Executed Steps       : 44
+Passed Steps         : 132
+Failed Steps         : 0
+Time Taken           : 00:02:32
+-----------------------------------------------------
+
+Run Finished on Fri Mar 19 00:41:32 PDT 2021
+-----------------------------------------------------
+ExecutionDate        : 19-Mar-2021 00-38-59
+Executed TestCases   : 1
+Passed TestCases     : 1
+Failed TestCases     : 0
+Time Taken           : 00:02:32
+ReportPath           : file:////home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/Projects/PSIC_Digital_PP/Results/TestExecution/UAT_Regression/TaskCenter/19-Mar-2021 00-38-59/summary.html
+-----------------------------------------------------

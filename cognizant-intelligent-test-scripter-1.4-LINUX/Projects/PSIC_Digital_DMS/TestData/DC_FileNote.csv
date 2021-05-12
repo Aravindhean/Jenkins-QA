@@ -1,0 +1,4 @@
+Scenario,Flow,Iteration,SubIteration,ClaimNo,Subject
+DEV_DMS_Scenarios,TC21_DuckCreek_FileNote,1,1,3180007,Claim#: 3180007
+TEST_DMS_Scenarios,TC21_DuckCreek_FileNote,1,1,3180007,Claim#: 3180007
+UAT_DMS_Scenarios,TC21_DuckCreek_FileNote,1,1,3180007,Claim#: 3180007

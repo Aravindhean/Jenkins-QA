@@ -1,0 +1,8 @@
+2020-12-18 03:46:18:12S -0800 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startSpy:Launching Server for Spy
+2020-12-18 03:46:18:12S -0800 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2021-03-01 00:06:31:03S -0800 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startRecord:Launching Server for Record
+2021-03-01 00:06:31:03S -0800 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2021-03-01 00:06:34:03S -0800 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped
+2021-04-27 12:50:49:04S -0700 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer startRecord:Launching Server for Record
+2021-04-27 12:50:49:04S -0700 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Starting Server
+2021-04-27 12:50:53:04S -0700 [INFO] com.cognizant.cognizantits.extension.server.ExtensionServer$1 run:Server Stopped

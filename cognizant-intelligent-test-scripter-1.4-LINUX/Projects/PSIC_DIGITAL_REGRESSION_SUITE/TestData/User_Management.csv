@@ -1,0 +1,6 @@
+Scenario,Flow,Iteration,SubIteration,Role,UserID,FirstName,ReasonforDenial,EMAIL,Phone_Office,Phone_Cell,NewColumn0
+DIM_Scenarios,11.User_Mgmt_Approval,1,1,USER,KeithGar3,Keith,,,,,
+DIM_Scenarios,13.User_Mgmt_Deny,1,1,USER,Russell5,Russell,User does not belong to this agency,,,,
+DIM_Scenarios,14.User_Mgmt_UpdateUsers,1,1,USER,KeithGar3,Keith,,,9566274235,7456461646,
+DIM_Scenarios,15.User_Mgmt_DELETEUsers,1,1,USER,CadenRo1,Caden,,,,,
+DIM_Scenarios,17.ErrorValidation_UserMgmt,1,1,,,Patrick,,,,,

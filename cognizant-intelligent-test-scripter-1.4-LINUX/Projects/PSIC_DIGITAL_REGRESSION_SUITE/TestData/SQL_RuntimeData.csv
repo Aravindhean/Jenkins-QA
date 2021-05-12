@@ -1,0 +1,4 @@
+Scenario,Flow,Iteration,SubIteration,SQL_eMail,SQL_PhoneNo
+DIM_Scenarios,SQL_Validations,1,1,doolittle22401@gmail.com,
+DIM_Scenarios,3.VALIDATE_PhoneNo_SQL,1,1,,9566274235
+DIM_Scenarios,4.VALIDATE_eMail_SQL,1,1,doolittle22401@gmail.com,

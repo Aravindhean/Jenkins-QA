@@ -1,0 +1,11 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,"Execute Resuable if mentioned in the data sheet in the format Scenario|TestCase ",PSIC_ExecuteReusable,Mail_Ingestion:Ingestion_Reusable,,
+2,Browser,Wait for [<Data>] milli seconds,pause,@600000,,
+3,Execute,,DMS_WorkFlow:Claims_Login,,,
+4,Execute,,DMS_WorkFlow:CompletedTask_Label,,,
+"//5",Execute,,DMS_WorkFlow:Search_CT,,,
+6,Execute,,DMS_WorkFlow:CompletedStatus_Check,,,
+7,Execute,,DMS_WorkFlow:Select_Task,,,
+8,Execute,,DMS_WorkFlow:Select_File,,,
+9,Execute,,DMS_WorkFlow:CompletedTask_CommonInfo_HiddenCheck,,,
+10,Execute,,DMS_WorkFlow:Claims_Logout,,,

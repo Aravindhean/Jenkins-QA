@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,UpdateSender_Check,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,DMS_TaskQueue:Sender,REPLACE,Task_Queue
+2,UpdateSender_Check,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Task_Queue
+3,Browser,"Take a Screen Shot ",takeScreenshot,,,

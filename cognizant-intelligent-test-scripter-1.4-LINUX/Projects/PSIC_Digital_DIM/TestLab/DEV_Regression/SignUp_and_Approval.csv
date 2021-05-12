@@ -1,0 +1,2 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+true,DEV_DIM_Scenarios,11.SignUp_User_Mgmt_Approval,Single,NoRun,Chrome Headless,Default,Any

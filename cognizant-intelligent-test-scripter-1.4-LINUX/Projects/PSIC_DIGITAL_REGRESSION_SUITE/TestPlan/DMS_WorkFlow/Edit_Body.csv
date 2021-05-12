@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,To append the given string with random characters,PSIC_appendrandomstring,Claims_RuntimeData:Body,%Body%,
+2,Body,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,TaskQueue_DetailedPage
+3,Body,Clear the element [<Object>],clearByJS,,,TaskQueue_DetailedPage
+4,Body,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,%Body%,,TaskQueue_DetailedPage
+5,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,Claims_RuntimeData:Body,%Body%,

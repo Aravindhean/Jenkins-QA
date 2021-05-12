@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Select_FirstIndex,"Click the [<Object>] ",Click,,,Task_Queue
+2,Browser,Wait for [<Data>] milli seconds,pause,@3000,,
+3,Execute,,DMS_WorkFlow:Store_Taskld_MetaData,,,

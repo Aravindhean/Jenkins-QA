@@ -1,0 +1,6 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,DIM_WorkFlow:SignUpforDeleteUser,,,
+2,Execute,,DIM_WorkFlow:User_Login,,,
+3,Execute,,DIM_WorkFlow:UserMgmt_Click,,,
+4,Execute,,DIM_WorkFlow:UserMgmt_Deny,,,
+5,Execute,,DIM_WorkFlow:Signout,,,

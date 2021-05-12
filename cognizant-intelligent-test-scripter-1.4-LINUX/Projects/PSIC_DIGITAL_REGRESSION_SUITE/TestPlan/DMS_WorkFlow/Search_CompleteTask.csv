@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Search_Complete,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DiscardTask:TaskID,,Completed_Task
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@50,,Login-Page
+3,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,

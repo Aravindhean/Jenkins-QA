@@ -1,0 +1,437 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : ${project.version}
+java.runtime.name    : OpenJDK Runtime Environment
+java.version         : 11.0.11
+java.home            : /usr/lib/jvm/java-11-amazon-corretto.x86_64
+os.name              : Linux
+os.arch              : amd64
+os.version           : 4.14.231-173.360.amzn2.x86_64
+file.encoding        : UTF-8
+========================
+Run Started on Fri May 07 05:24:37 PDT 2021
+Loading Browser Profile
+Loading RunManager
+[Scenario:UAT_DIM_Scenarios] [TestCase: 1.Setup_eMail_MFA] [Description: 1.Setup_eMail_MFA] [Browser: Chrome Headless] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//UAT_Regression/DIM_Scenarios]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Run Manager true
+Continue Execution true
+Shutting Down Thread as there is no need for SelectiveThreading
+Inside Task Run
+Running Iteration 1
+Launching Chrome Headless
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 24953
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620390277.887][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+2021-05-07 05:24:37:05S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Headless Launched
+Step:1   | Object: Browser | Action: Open | Input: SignUp:URL | Conditon:  | @07-May-2021 05:24:37.037
+[DONE]   | Opened Url: https://portal.stage.pacificspecialty.com/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @07-May-2021 05:24:46.046
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:3   | Object: Signup_Link | Action: Click | Input:  | Conditon:  | @07-May-2021 05:24:46.046
+Using @xpath [//*[text()='Sign Up']], Object 'Signup_Link' Found in 12 ms
+[DONE]   | Clicking on Signup_Link
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @07-May-2021 05:24:57.057
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:5   | Object: ProducerCode_TB | Action: PSIC_Set | Input: SignUp:ProducerCode | Conditon:  | @07-May-2021 05:24:57.057
+Using @xpath [//*[@formcontrolname="producerCode"]], Object 'ProducerCode_TB' Found in 12 ms
+[DONE]   | Entered Text 'B00088' on 'ProducerCode_TB'
+
+===================================================================================================
+
+Step:6   | Object: Role_DD | Action: PSIC_Selectbytext | Input: SignUp:Role | Conditon:  | @07-May-2021 05:24:57.057
+Using @xpath [//select[@formcontrolname="role"]], Object 'Role_DD' Found in 12 ms
+[DONE]   | Item/s 'PRINCIPAL' is/are selected from list Role_DD
+
+===================================================================================================
+
+Step:9   | Object: Browser | Action: RandomAlphabetic | Input: RuntimeData:FName | Conditon: %FirstName% | @07-May-2021 05:24:57.057
+jwhkf
+Adding to runTimeVars %FirstName%:jwhkf
+[PASS]   | jwhkf generated successfully
+
+===================================================================================================
+
+Step:10  | Object: Browser | Action: RandomAlphabetic | Input: RuntimeData:LName | Conditon: %LastName% | @07-May-2021 05:24:58.058
+qkzmu
+Adding to runTimeVars %LastName%:qkzmu
+[PASS]   | qkzmu generated successfully
+
+===================================================================================================
+
+Step:11  | Object: Browser | Action: storeVariableInDataSheet | Input: RuntimeData:FName | Conditon: %FirstName% | @07-May-2021 05:24:59.059
+Getting runTimeVar %FirstName%
+%FirstName%
+Getting runTimeVar %FirstName%
+[DONE]   | Value of variable %FirstName% has been stored into the data sheet
+
+===================================================================================================
+
+Step:12  | Object: Browser | Action: storeVariableInDataSheet | Input: RuntimeData:LName | Conditon: %LastName% | @07-May-2021 05:24:59.059
+Getting runTimeVar %LastName%
+%LastName%
+Getting runTimeVar %LastName%
+[DONE]   | Value of variable %LastName% has been stored into the data sheet
+
+===================================================================================================
+
+Step:13  | Object: FirstName_TB | Action: PSIC_Set | Input: RuntimeData:FName | Conditon:  | @07-May-2021 05:24:59.059
+Using @xpath [//*[@formcontrolname="firstName"]], Object 'FirstName_TB' Found in 9 ms
+[DONE]   | Entered Text 'jwhkf' on 'FirstName_TB'
+
+===================================================================================================
+
+Step:14  | Object: LastName_TB | Action: PSIC_Set | Input: RuntimeData:LName | Conditon:  | @07-May-2021 05:24:59.059
+Using @xpath [//*[@formcontrolname="lastName"]], Object 'LastName_TB' Found in 17 ms
+[DONE]   | Entered Text 'qkzmu' on 'LastName_TB'
+
+===================================================================================================
+
+Step:15  | Object: EmailAddress_TB | Action: PSIC_Set | Input: SignUp:Email | Conditon:  | @07-May-2021 05:24:59.059
+Using @xpath [//*[@formcontrolname="email"]], Object 'EmailAddress_TB' Found in 10 ms
+[DONE]   | Entered Text 'pacificspeciality@outlook.com' on 'EmailAddress_TB'
+
+===================================================================================================
+
+Step:16  | Object: Phone_Office | Action: PSIC_Set | Input: SignUp:Phone_office | Conditon:  | @07-May-2021 05:24:59.059
+Using @xpath [//*[@formcontrolname="officePhone"]], Object 'Phone_Office' Found in 13 ms
+[DONE]   | Entered Text '9566274235' on 'Phone_Office'
+
+===================================================================================================
+
+Step:17  | Object: Phone_Cell | Action: PSIC_Set | Input: SignUp:Phone_cell | Conditon:  | @07-May-2021 05:25:00.000
+Using @xpath [//*[@formcontrolname="cellPhone"]], Object 'Phone_Cell' Found in 11 ms
+[DONE]   | Entered Text '9566274235' on 'Phone_Cell'
+
+===================================================================================================
+
+Step:18  | Object: Browser | Action: Random_Alphanumeric | Input: RuntimeData:UserID | Conditon: %UserID% | @07-May-2021 05:25:00.000
+5BFQaNwD
+Adding to runTimeVars %UserID%:5BFQaNwD
+[PASS]   | 5BFQaNwD generated successfully
+
+===================================================================================================
+
+Step:19  | Object: Browser | Action: storeVariableInDataSheet | Input: RuntimeData:UserID | Conditon: %UserID% | @07-May-2021 05:25:01.001
+Getting runTimeVar %UserID%
+%UserID%
+Getting runTimeVar %UserID%
+[DONE]   | Value of variable %UserID% has been stored into the data sheet
+
+===================================================================================================
+
+Step:20  | Object: UserID | Action: PSIC_Set | Input: RuntimeData:UserID | Conditon: %UserID% | @07-May-2021 05:25:01.001
+Using @xpath [//*[@formcontrolname="userID"]], Object 'UserID' Found in 11 ms
+[DONE]   | Entered Text '5BFQaNwD' on 'UserID'
+
+===================================================================================================
+
+Step:21  | Object: Password | Action: PSIC_SetDecrypt | Input: SignUp:Confirm_Password | Conditon:  | @07-May-2021 05:25:01.001
+Using @xpath [//*[@formcontrolname="password"]], Object 'Password' Found in 10 ms
+[DONE]   | Entered Text '********' on 'Password'
+
+===================================================================================================
+
+Step:22  | Object: Confirm_Password | Action: PSIC_SetDecrypt | Input: SignUp:Confirm_Password | Conditon:  | @07-May-2021 05:25:02.002
+Using @xpath [//*[@formcontrolname="confirmPassword"]], Object 'Confirm_Password' Found in 11 ms
+[DONE]   | Entered Text '********' on 'Confirm_Password'
+
+===================================================================================================
+
+Step:23  | Object: Browser | Action: scrollToBottom | Input:  | Conditon:  | @07-May-2021 05:25:02.002
+[DONE]   | Browser Scrolled to []
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: switchToFrameByIndex | Input: @0 | Conditon:  | @07-May-2021 05:25:02.002
+[DONE]   | Webdriver switched to new frame by index[0]
+
+===================================================================================================
+
+Step:2   | Object: Recaptcha_Checkbox | Action: clickByJS | Input:  | Conditon:  | @07-May-2021 05:25:02.002
+Using @xpath [//div[@class="recaptcha-checkbox-border"]], Object 'Recaptcha_Checkbox' Found in 15 ms
+[DONE]   | Clicked on Recaptcha_Checkbox
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:02.002
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:25  | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @07-May-2021 05:25:04.004
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:26  | Object: Browser | Action: switchToDefaultContent | Input:  | Conditon:  | @07-May-2021 05:25:09.009
+[DONE]   | Webdriver switched to default content
+
+===================================================================================================
+
+Step:27  | Object: Submit_BTN | Action: clickByJS | Input:  | Conditon:  | @07-May-2021 05:25:09.009
+Using @xpath [//*[@type='button' and text()=' Submit ']], Object 'Submit_BTN' Found in 10 ms
+[DONE]   | Clicked on Submit_BTN
+
+===================================================================================================
+
+Step:28  | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @07-May-2021 05:25:09.009
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:29  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:14.014
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:30  | Object: ApprovalPending_Txt | Action: verifyElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:14.014
+Using @xpath [//*[text()='Approval Pending!']], Object 'ApprovalPending_Txt' Found in 11 ms
+[PASS]   | Element [ApprovalPending_Txt] is Displayed
+
+===================================================================================================
+
+Step:31  | Object: ApprovalPending_Msg | Action: verifyElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:15.015
+Using @xpath [//div[contains(text(),'Your account is pending for an approval with a Principal/Manager.')]], Object 'ApprovalPending_Msg' Found in 10 ms
+[PASS]   | Element [ApprovalPending_Msg] is Displayed
+
+===================================================================================================
+
+Step:32  | Object: OK_BTN | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:16.016
+Using @xpath [(//button[contains(text(),'OK')])[3]], Object 'OK_BTN' Found in 10 ms
+[DONE]   | Clicking on OK_BTN
+
+===================================================================================================
+
+Step:33  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:25.025
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: Open | Input: DIM_Login:URL | Conditon:  | @07-May-2021 05:25:29.029
+[DONE]   | Opened Url: https://portal.stage.pacificspecialty.com/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @200 | Conditon:  | @07-May-2021 05:25:30.030
+[DONE]   | Element Wait time changed to 200 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:30.030
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 13 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: DIM_Login:Username | Conditon:  | @07-May-2021 05:25:32.032
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 9 ms
+[DONE]   | Entered Text 'Salesrep1' on 'UserName_TB'
+
+===================================================================================================
+
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: DIM_Login:Password | Conditon:  | @07-May-2021 05:25:32.032
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 10 ms
+[DONE]   | Entered Text '********' on 'Password_TB'
+
+===================================================================================================
+
+Step:6   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:32.032
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 10 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:7   | Object: Browser | Action: setElementTimeOut | Input: @10 | Conditon:  | @07-May-2021 05:25:32.032
+[DONE]   | Element Wait time changed to 10 second/s
+
+===================================================================================================
+
+Step:8   | Object: Browser | Action: pause | Input: @2000 | Conditon:  | @07-May-2021 05:25:32.032
+[DONE]   | Thread sleep for '2000
+
+===================================================================================================
+
+Step:9   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:34.034
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:10  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:35.035
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 2040 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:11  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:38.038
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:12  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:39.039
+Using @xpath [//*[contains(text(),' Welcome')]], Object 'Welcome_TXT' Found in 6 ms
+[PASS]   | Element [Welcome_TXT] is Displayed
+
+===================================================================================================
+
+Step:1   | Object: Profile_Icon | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:40.040
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 10 ms
+[DONE]   | Clicking on Profile_Icon
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @3000 | Conditon:  | @07-May-2021 05:25:40.040
+[DONE]   | Thread sleep for '3000
+
+===================================================================================================
+
+Step:3   | Object: UserMgmt_Link | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:43.043
+Using @xpath [//span[text()=' User Management ']], Object 'UserMgmt_Link' Found in 12 ms
+[DONE]   | Clicking on UserMgmt_Link
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @07-May-2021 05:25:43.043
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:48.048
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:3   | Object: SearchUser | Action: PSIC_Set | Input: RuntimeData:FName | Conditon:  | @07-May-2021 05:25:49.049
+Using @xpath [//*[contains(@class,"user-search")]], Object 'SearchUser' Found in 10 ms
+[DONE]   | Entered Text 'jwhkf' on 'SearchUser'
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: sendKeysToWindow | Input: @ENTER | Conditon:  | @07-May-2021 05:25:50.050
+[DONE]   | Keys Submitted
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: setElementTimeOut | Input: @10 | Conditon:  | @07-May-2021 05:25:50.050
+[DONE]   | Element Wait time changed to 10 second/s
+
+===================================================================================================
+
+Step:6   | Object: Select_User | Action: clickByJS | Input:  | Conditon:  | @07-May-2021 05:25:50.050
+Using @xpath [(//*[@ng-reflect-klass="row"])[1]], Object 'Select_User' Found in 10 ms
+[DONE]   | Clicked on Select_User
+
+===================================================================================================
+
+Step:11  | Object: Approve_BTN | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:50.050
+Using @xpath [//button[text()=' Approve ']], Object 'Approve_BTN' Found in 12 ms
+[DONE]   | Clicking on Approve_BTN
+
+===================================================================================================
+
+Step:12  | Object: ConfirmRole_Txt | Action: assertElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:50.050
+Using @xpath [//h5[text()='Confirm Role']], Object 'ConfirmRole_Txt' Found in 10 ms
+[PASS]   | Element [ConfirmRole_Txt] is Displayed
+
+===================================================================================================
+
+Step:13  | Object: Confirm_BTN | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:50.050
+Using @xpath [//button[text()=' Confirm ']], Object 'Confirm_BTN' Found in 10 ms
+[DONE]   | Clicking on Confirm_BTN
+
+===================================================================================================
+
+Step:14  | Object: ApproveSuccessMsg_Txt | Action: assertElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:25:51.051
+Using @xpath [//*[text()='User Successfully Approved']], Object 'ApproveSuccessMsg_Txt' Found in 4071 ms
+[PASS]   | Element [ApproveSuccessMsg_Txt] is Displayed
+
+===================================================================================================
+
+Step:15  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:55.055
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:16  | Object: Approve_Close_BTN | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:56.056
+Using @xpath [(//span[@class="close-btn"])[3]], Object 'Approve_Close_BTN' Found in 10 ms
+[DONE]   | Clicking on Approve_Close_BTN
+
+===================================================================================================
+
+Step:1   | Object: Profile_Icon | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:56.056
+Using @xpath [//*[@class="user-icon"]], Object 'Profile_Icon' Found in 10 ms
+[DONE]   | Clicking on Profile_Icon
+
+===================================================================================================
+
+Step:2   | Object: User_Signout | Action: waitForElementToBePresent | Input:  | Conditon:  | @07-May-2021 05:25:57.057
+Using @xpath [//span[contains(text(),'Sign Out')]], Object 'User_Signout' Found in 10 ms
+[PASS]   | 'User_Signout' Element Present in the stipulated time
+
+===================================================================================================
+
+Step:3   | Object: User_Signout | Action: Click | Input:  | Conditon:  | @07-May-2021 05:25:58.058
+Using @xpath [//span[contains(text(),'Sign Out')]], Object 'User_Signout' Found in 7 ms
+[DONE]   | Clicking on User_Signout
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @07-May-2021 05:25:58.058
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @07-May-2021 05:25:59.059
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:6   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @07-May-2021 05:26:02.002
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 15 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: pause | Input: @900000 | Conditon:  | @07-May-2021 05:26:04.004
+[DONE]   | Thread sleep for '900000
+
+===================================================================================================
+
+
+---------------------------------------------------
+Testcase Name        : UAT_DIM_Scenarios:1.Setup_eMail_MFA
+Executed Steps       : 67
+Passed Steps         : 67
+Failed Steps         : 0
+Time Taken           : 00:16:26
+-----------------------------------------------------
+
+Run Finished on Fri May 07 05:41:04 PDT 2021
+-----------------------------------------------------
+ExecutionDate        : 07-May-2021 05-24-37
+Executed TestCases   : 1
+Passed TestCases     : 1
+Failed TestCases     : 0
+Time Taken           : 00:16:26
+ReportPath           : file:////home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/Projects/PSIC_Digital_DIM/Results/TestExecution/UAT_Regression/DIM_Scenarios/07-May-2021 05-24-37/summary.html
+-----------------------------------------------------

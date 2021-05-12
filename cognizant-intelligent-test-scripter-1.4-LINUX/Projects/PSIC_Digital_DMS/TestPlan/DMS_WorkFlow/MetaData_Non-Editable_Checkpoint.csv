@@ -1,0 +1,13 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,ClaimNo_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+2,ClaimOwner_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+3,Sender_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+4,From_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+5,Subject_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+6,Body_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+7,Claimant_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+8,PolicyNumber_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+9,Source_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+10,DateofLoss_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+11,PrimaryInsured_Hidden,Assert if [<Object>] element is displayed,assertElementDisplayed,,,CompletedTask_Hidden
+12,Browser,"Take a Screen Shot ",takeScreenshot,,,

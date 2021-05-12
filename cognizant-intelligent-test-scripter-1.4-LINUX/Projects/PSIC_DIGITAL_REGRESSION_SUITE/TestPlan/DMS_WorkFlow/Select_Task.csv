@@ -1,0 +1,7 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Select_FirstIndex,"Wait for [<Object>] to be visible ",waitForElementToBeVisible,,,Task_Queue
+2,Select_FirstIndex,"Wait for [<Object>] to be clickable ",waitForElementToBeClickable,,,Task_Queue
+3,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+4,Select_FirstIndex,Click on [<Object>],clickByJS,,,Task_Queue
+5,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+6,Browser,"Take a Screen Shot ",takeScreenshot,,,
