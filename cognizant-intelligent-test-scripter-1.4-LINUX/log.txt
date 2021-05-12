@@ -5204,80 +5204,21 @@ SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%2
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 2021-05-11 01:41:29:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:00:17.150 ]
-2021-05-11 07:03:57:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 07:03:57:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 07:03:58:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 07:03:58:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 07:04:00:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
+2021-05-12 02:11:59:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
+2021-05-12 02:12:00:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-12 02:12:00:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
+2021-05-12 02:12:00:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
+2021-05-12 02:12:03:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
 SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 07:07:56:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 07:07:57:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 07:07:57:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 07:07:57:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 07:07:59:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 08:23:44:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 01:15:47.823 ]
-2021-05-11 08:23:52:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 01:19:55.497 ]
-2021-05-11 08:24:00:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 08:24:01:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 08:24:01:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 08:24:01:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 08:24:03:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 08:24:12:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:00:12.309 ]
-2021-05-11 08:26:49:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 08:26:50:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 08:26:50:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 08:26:50:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/Linux Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 08:26:52:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/DMS-QA/Linux%20Workspaces/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 08:27:36:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:00:47.267 ]
-2021-05-11 10:33:46:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 10:33:47:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 10:33:47:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 10:33:47:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 10:33:49:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 10:33:57:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:00:11.302 ]
-2021-05-11 10:37:41:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 10:37:42:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 10:37:42:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 10:37:42:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 10:37:44:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 10:37:52:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:00:11.020 ]
-2021-05-11 22:44:38:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
-2021-05-11 22:44:38:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
-2021-05-11 22:44:39:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
-2021-05-11 22:44:39:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
-2021-05-11 22:44:41:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
-SLF4J: Class path contains multiple SLF4J bindings.
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
-2021-05-11 22:49:44:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:05:06.763 ]
+2021-05-12 02:37:21:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-12 02:37:21:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/PSIC_CustomMethods.jar
+2021-05-12 02:37:21:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/DMS-QA/cognizant-intelligent-test-scripter-1.4-LINUX/lib/commands/gwcc10.jar
+2021-05-12 02:37:21:794 -0700 [Thread-4] [INFO] com.cognizant.cognizantits.engine.core.TMIntegration - TM integration disabled for the testset
+2021-05-12 02:38:05:945 -0700 [Thread-5] [INFO] com.cognizant.cognizantits.engine.support.DesktopApi - Trying to Open - /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/Projects/PSIC_Digital_DIM/Results/TestExecution/DEV_Regression/DIM_Scenarios/12-May-2021 02-37-21/summary.html
+2021-05-12 02:38:05:946 -0700 [Thread-5] [INFO] com.cognizant.cognizantits.engine.support.DesktopApi - Trying to exec: [kde-open] [%s] [/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/Projects/PSIC_Digital_DIM/Results/TestExecution/DEV_Regression/DIM_Scenarios/12-May-2021 02-37-21/summary.html]
+2021-05-12 02:38:05:954 -0700 [Thread-5] [INFO] com.cognizant.cognizantits.engine.support.DesktopApi - Trying to exec: [gnome-open] [%s] [/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/Projects/PSIC_Digital_DIM/Results/TestExecution/DEV_Regression/DIM_Scenarios/12-May-2021 02-37-21/summary.html]
+2021-05-12 02:38:05:956 -0700 [Thread-5] [INFO] com.cognizant.cognizantits.engine.support.DesktopApi - Trying to exec: [xdg-open] [%s] [/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4-LINUX/Projects/PSIC_Digital_DIM/Results/TestExecution/DEV_Regression/DIM_Scenarios/12-May-2021 02-37-21/summary.html]
