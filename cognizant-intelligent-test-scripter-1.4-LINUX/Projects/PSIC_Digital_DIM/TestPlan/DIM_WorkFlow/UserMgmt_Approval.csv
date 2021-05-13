@@ -1,0 +1,17 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+"//1",View_PendingApproval,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,User_Management
+"//2",View_PendingApproval,Assert if [<Object>] element is displayed,assertElementDisplayed,,,User_Management
+3,SearchUser,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,RuntimeData:FName,,User_Management
+4,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
+5,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+6,Select_User,Click on [<Object>],clickByJS,,,User_Management
+"//7",ApproveUser_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+"//8",UserID_Txt,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,SignUp:UserID,REPLACE,Context
+"//9",UserID_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+"//10",Role_DD,Select item in [<Object>] which has the value: [<Data>]  if the test data is available,PSIC_Selectbytext,SignUp:Role,,User_Management
+11,Approve_BTN,"Click the [<Object>] ",Click,,,User_Management
+12,ConfirmRole_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+"*13",Confirm_BTN,"Click the [<Object>] ",Click,,,User_Management
+14,ApproveSuccessMsg_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+15,Browser,"Take a Screen Shot ",takeScreenshot,,,
+16,Approve_Close_BTN,"Click the [<Object>] ",Click,,,User_Management

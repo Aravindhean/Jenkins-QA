@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Notice_DD,"Click the [<Object>] ",Click,,,PP_TaskCenter
+2,Notice_DD,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,PolicyRelatedInfo:Notice,,PP_TaskCenter
+3,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,

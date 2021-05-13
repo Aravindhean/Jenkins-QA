@@ -1,0 +1,135 @@
+{
+  "id" : "NewProject1",
+  "name" : "NewProject1",
+  "version" : "1.3",
+  "attributes" : [ ],
+  "tags" : [ ],
+  "_meta" : [ {
+    "type" : "attribute",
+    "name" : "scenario",
+    "desc" : "High level classification of test requirement/cases grouped together",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@smoke",
+    "desc" : "Non-exhaustive set of tests that aim at ensuring that the most important functions work",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@uat",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@load",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "UAT_GuestPaymentPortal",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "Test_GuestPaymentPortal",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  } ],
+  "data" : [ {
+    "id" : "UAT_GuestPaymentPortal#TC01_DC_PolicyNumber_EFT",
+    "name" : "TC01_DC_PolicyNumber_EFT",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC08_Legacy_PolicyNumber_CCPay",
+    "name" : "TC08_Legacy_PolicyNumber_CCPay",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC05_DC_InvoiceNo_EFT",
+    "name" : "TC05_DC_InvoiceNo_EFT",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC07_Legacy_PolicyNumber_EFT",
+    "name" : "TC07_Legacy_PolicyNumber_EFT",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC06_DC_Invoice_CCPay",
+    "name" : "TC06_DC_Invoice_CCPay",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC03_DC_AccNumber_EFT",
+    "name" : "TC03_DC_AccNumber_EFT",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC02_DC_PolicyNumber_CCPay",
+    "name" : "TC02_DC_PolicyNumber_CCPay",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  }, {
+    "id" : "UAT_GuestPaymentPortal#TC04_DC_AccNumber_CCPay",
+    "name" : "TC04_DC_AccNumber_CCPay",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "testcase"
+    }, {
+      "name" : "scenario",
+      "value" : "UAT_GuestPaymentPortal"
+    } ]
+  } ]
+}

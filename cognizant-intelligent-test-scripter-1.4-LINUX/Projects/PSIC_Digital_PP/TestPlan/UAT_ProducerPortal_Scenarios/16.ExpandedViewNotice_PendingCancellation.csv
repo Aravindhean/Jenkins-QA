@@ -1,0 +1,11 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Execute,,PP_WorkFlow:PolicyNum_SQL,,,
+2,Execute,,PP_WorkFlow:UAT_ProducerSignin,,,
+3,Execute,,PP_WorkFlow:PP_Dashboard,,,
+4,Execute,,PP_WorkFlow:PP_TaskCenter_verifyElement,,,
+5,Execute,,PP_WorkFlow:Select_TitleCard,,,
+6,Execute,,PP_WorkFlow:Expanded_Search,,,
+7,Execute,,PP_WorkFlow:Expand_ViewNotice,,,
+8,Execute,,PP_WorkFlow:ViewNotice_PolicyRelatedInfo,,,
+9,Execute,,PP_WorkFlow:ViewNotice_GoBack,,,
+10,Execute,,PP_WorkFlow:Producer_Signout,,,

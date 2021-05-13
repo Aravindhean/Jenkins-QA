@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,SelectDoc_FirstIndex,Click on [<Object>],clickByJS,,,ViewDocuments
+2,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+3,Browser,"Take a Screen Shot ",takeScreenshot,,,

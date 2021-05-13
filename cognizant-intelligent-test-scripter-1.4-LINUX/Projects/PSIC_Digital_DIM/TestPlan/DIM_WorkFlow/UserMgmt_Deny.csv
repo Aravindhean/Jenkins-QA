@@ -1,0 +1,19 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+"//1",View_PendingApproval,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,User_Management
+"//2",View_PendingApproval,Assert if [<Object>] element is displayed,assertElementDisplayed,,,User_Management
+3,SearchUser,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,RuntimeData:FName,,User_Management
+4,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
+5,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+6,Select_User,Click on [<Object>],clickByJS,,,User_Management
+7,ApproveUser_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+8,UserID_Txt,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,RuntimeData:UserID,REPLACE,Context
+9,UserID_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+10,Deny_BTN,"Click the [<Object>] ",Click,,,User_Management
+11,Confirm_Denial_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+12,Reason_for_Denial,Select item in [<Object>] which has the value: [<Data>]  if the test data is available,PSIC_Selectbytext,User_Management:ReasonforDenial,,User_Management
+13,Reason_for_Denial,Assert if [<Object>]'s Text Equals [Ignorecase] [<Data>],assertElementTextIEquals,User_Management:ReasonforDenial,,User_Management
+14,Confirm_BTN,"Click the [<Object>] ",Click,,,User_Management
+15,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+16,DenyMsg_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+17,Browser,"Take a Screen Shot ",takeScreenshot,,,
+18,Deny_Close_BTN,"Click the [<Object>] ",Click,,,User_Management

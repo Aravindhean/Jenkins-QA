@@ -1,0 +1,10 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Receipt_Tickmark,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+2,PageHeader,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+3,Payment_Success_Msg,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+4,Transaction_Id,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:Transaction_ID,,GuestPaymentPortal
+5,Payment_Date,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:Payment_Date,,GuestPaymentPortal
+6,Payment_Method2,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:Payment_method2,,GuestPaymentPortal
+7,PolicyNumber,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:PolicyNumber,,GuestPaymentPortal
+8,Amount_Txt,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:Amount_Txt,,GuestPaymentPortal
+9,Browser,"Take a Screen Shot ",takeScreenshot,,,

@@ -1,0 +1,10 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Switch to frame which has index: [<Data>],switchToFrameByIndex,@0,,
+2,MakePayment,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GuestPaymentPortal
+3,Payment_Continue _Continue_Txt,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+4,Payment_Amt_Header,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+5,Current_Amt_Due,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+6,Amount_Value,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Runtime_Data:AmountValue,,GuestPaymentPortal
+7,Browser,"Take a Screen Shot ",takeScreenshot,,,
+8,Logo_Check,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+9,Payment_Continue,Click on [<Object>],clickByJS,,,GuestPaymentPortal

@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Database,Initiate the DB transaction,initDBConnection,,,
+2,Database,Execute the Query in [<Input>],executeSelectQuery,ODS_SQLDB:SQL_Query,,
+3,Database,Get the value by Query in [<Input>],GetValuebyQuery,ODS_SQLDB:SQL_Query,%PolicyNumber%,
+4,Browser,Store the [<Object>] element's text into datasheet:columname [<Data>],storeVariableInDataSheet,ODS_SQLDB:PolicyNo,%PolicyNumber%,

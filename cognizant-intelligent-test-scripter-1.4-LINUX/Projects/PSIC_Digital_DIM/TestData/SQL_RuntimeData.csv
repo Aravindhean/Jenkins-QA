@@ -1,0 +1,9 @@
+Scenario,Flow,Iteration,SubIteration,SQL_eMail,SQL_PhoneNo
+DEV_DIM_Scenarios,4.VALIDATE_PhoneNo_SQL,1,1,,9566274235
+DEV_DIM_Scenarios,5.VALIDATE_eMail_SQL,1,1,pacificspeciality@outlook.com,
+TEST_DIM_Scenarios,3.VALIDATE_PhoneNo_SQL,1,1,,9566274235
+TEST_DIM_Scenarios,4.VALIDATE_eMail_SQL,1,1,pacificspeciality@outlook.com,
+UAT_DIM_Scenarios,4.VALIDATE_PhoneNo_SQL,1,1,,9566274235
+UAT_DIM_Scenarios,5.VALIDATE_eMail_SQL,1,1,pacificspeciality@outlook.com,
+PROD_DIM_Scenarios,4.VALIDATE_PhoneNo_SQL,1,1,,9566274235
+PROD_DIM_Scenarios,5.VALIDATE_eMail_SQL,1,1,pacificspeciality@outlook.com,

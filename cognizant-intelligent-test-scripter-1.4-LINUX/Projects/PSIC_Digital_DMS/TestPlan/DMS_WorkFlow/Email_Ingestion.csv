@@ -1,0 +1,10 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:Mail_UserID,%OutlookUsername%,
+2,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:Mail_Pwd,%OutlookPassword%,
+3,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:ClaimDev_MailID,%ClaimsTestUser%,
+4,Browser,Add a variable to access within testcase,AddVar,Claims_RuntimeData:ClaimFormat,%ClaimFormat%,
+5,Browser,Add a variable to access within testcase,AddVar,Claims_RuntimeData:FileLocation,%FileLoc%,
+6,Browser,Send Mail to Claims Test URL with Single Attachment,PSIC_ClaimMailAttachments,Claims_RuntimeData:Mail,"%OutlookUsername%,%OutlookPassword%,%ClaimsTestUser%,%ClaimFormat%,%FileLoc%,%FileLoc2%",
+7,Browser,"Refresh current page ",refreshDriver,,,
+8,Browser,To delete all the cookies,ClearCache,,,
+9,Browser,DeleteALLCookies,DeleteALLCookies,,,

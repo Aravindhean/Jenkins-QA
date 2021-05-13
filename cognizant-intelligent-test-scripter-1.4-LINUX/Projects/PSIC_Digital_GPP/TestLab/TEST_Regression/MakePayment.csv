@@ -1,0 +1,22 @@
+Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
+true,Test_GuestPaymentPortal,TC01_DC_PolicyNumber_EFT,1,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC01_DC_PolicyNumber_EFT,2,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC01_DC_PolicyNumber_EFT,3,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC02_DC_PolicyNumber_CCPay,1,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC02_DC_PolicyNumber_CCPay,2,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC02_DC_PolicyNumber_CCPay,3,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC03_DC_AccNumber_EFT,1,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC03_DC_AccNumber_EFT,2,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC03_DC_AccNumber_EFT,3,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC04_DC_AccNumber_CCPay,1,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC04_DC_AccNumber_CCPay,2,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC04_DC_AccNumber_CCPay,3,NoRun,Chrome Headless,Default,Any
+false,Test_GuestPaymentPortal,TC07_Legacy_PolicyNumber_EFT,2,NoRun,Chrome Headless,Default,Any
+false,Test_GuestPaymentPortal,TC08_Legacy_PolicyNumber_CCPay,2,NoRun,Chrome Headless,Default,Any
+false,Test_GuestPaymentPortal,TC07_Legacy_PolicyNumber_EFT,3,NoRun,Chrome Headless,Default,Any
+false,Test_GuestPaymentPortal,TC08_Legacy_PolicyNumber_CCPay,3,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC09_ErrorValidation_on_IncorrectZipcode,Single,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC10_ErrorValidation_on_IncorrectPolicyNo,Single,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC11_OtherAmount_ErrorValidation,Single,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC12_ErrorValidation_on_Blank,Single,NoRun,Chrome Headless,Default,Any
+true,Test_GuestPaymentPortal,TC13_ErrorValidation_EFT_BlankError,Single,NoRun,Chrome Headless,Default,Any

@@ -1,0 +1,20 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,View_ExistProfile,"Click the [<Object>] ",Click,,,User_Management
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+3,SearchUser,"Click the [<Object>] ",Click,,,User_Management
+4,SearchUser,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,User_Management:FirstName,,User_Management
+5,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+6,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@ENTER,,
+7,Select_User,Click on [<Object>],clickByJS,,,User_Management
+8,Update_User_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+9,UserID_Txt,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,RuntimeData:UserID,REPLACE,Context
+10,UserID_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+11,Delete_BTN,"Click the [<Object>] ",Click,,,User_Management
+12,Delete_User_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+13,ConfirmDeleteMsg_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+14,Confirm_BTN,"Click the [<Object>] ",Click,,,User_Management
+15,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+16,Browser,"Take a Screen Shot ",takeScreenshot,,,
+17,DeletionSuccess_Txt,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Context
+18,Approve_Close_BTN,"Click the [<Object>] ",Click,,,User_Management
+19,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
