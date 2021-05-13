@@ -1,0 +1,32 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,SignUp:URL,,
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+3,Signup_Link,"Click the [<Object>] ",Click,,,SignUp
+4,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+5,ProducerCode_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:ProducerCode,,SignUp
+6,Role_DD,Select item in [<Object>] which has the value: [<Data>]  if the test data is available,PSIC_Selectbytext,SignUp:Role,,SignUp
+7,Browser,To append the given string with random characters,RandomAlphabetic,SignUp:FirstName,%FirstName%,
+8,Browser,To append the given string with random characters,RandomAlphabetic,SignUp:LastName,%LastName%,
+9,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,SignUp:FirstName,%FirstName%,
+10,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,SignUp:LastName,%LastName%,
+11,FirstName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:FirstName,,SignUp
+12,LastName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:LastName,,SignUp
+13,EmailAddress_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:Email,,SignUp
+14,Phone_Office,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:Phone_office,,SignUp
+15,Phone_Cell,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:Phone_cell,,SignUp
+16,Browser,To append the given string with random characters,Random_Alphanumeric,SignUp:UserID,%UserID%,
+17,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,SignUp:UserID,%UserID%,
+18,UserID,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,SignUp:UserID,%UserID%,SignUp
+19,Password,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_SetDecrypt,SignUp:Password,,SignUp
+20,Confirm_Password,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_SetDecrypt,SignUp:Confirm_Password,,SignUp
+21,Browser,Scroll to bottom,scrollToBottom,,,
+22,Execute,,DIM_WorkFlow:Recaptcha,,,
+23,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+24,Browser,Switching control to the default window,switchToDefaultContent,,,
+25,Submit_BTN,"Click the [<Object>] ",clickByJS,,,SignUp
+26,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+27,Browser,"Take a Screen Shot ",takeScreenshot,,,
+28,ApprovalPending_Txt,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,SignUp
+29,ApprovalPending_Msg,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,SignUp
+30,OK_BTN,"Click the [<Object>] ",Click,,,SignUp
+31,Browser,"Take a Screen Shot ",takeScreenshot,,,

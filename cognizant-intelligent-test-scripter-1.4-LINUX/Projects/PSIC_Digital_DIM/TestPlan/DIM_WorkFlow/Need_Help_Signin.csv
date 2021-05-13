@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Need_Help_Signin,"Click the [<Object>] ",Click,,,Login-Page
+2,Browser,Wait for [<Data>] milli seconds,pause,@2000,,
+3,Forgot_Password,"Click the [<Object>] ",Click,,,Login-Page
+4,Browser,Wait for [<Data>] milli seconds,pause,@2000,,

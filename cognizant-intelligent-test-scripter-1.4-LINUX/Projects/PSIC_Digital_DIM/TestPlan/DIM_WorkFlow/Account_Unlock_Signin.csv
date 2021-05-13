@@ -1,0 +1,12 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,DIM_Login:URL,,
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@120,,
+3,UserLogin_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Login-Page
+4,UserName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DIM_Login:Username,,Login-Page
+5,Password_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_SetDecrypt,DIM_Login:Password,,Login-Page
+6,Login_BTN,"Click the [<Object>] ",Click,,,Login-Page
+7,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@10,,
+8,Browser,Wait for [<Data>] milli seconds,pause,@2000,,Login-Page
+9,Browser,"Take a Screen Shot ",takeScreenshot,,,Login-Page
+10,Welcome_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,Login-Page
+11,Browser,"Take a Screen Shot ",takeScreenshot,,,

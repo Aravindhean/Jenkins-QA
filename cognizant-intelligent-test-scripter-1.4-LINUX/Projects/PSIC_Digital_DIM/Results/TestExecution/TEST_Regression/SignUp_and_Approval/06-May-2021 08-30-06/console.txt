@@ -1,0 +1,650 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : ${project.version}
+java.runtime.name    : OpenJDK Runtime Environment
+java.version         : 11.0.11
+java.home            : /usr/lib/jvm/java-11-amazon-corretto.x86_64
+os.name              : Linux
+os.arch              : amd64
+os.version           : 4.14.231-173.360.amzn2.x86_64
+file.encoding        : UTF-8
+========================
+Run Started on Thu May 06 08:30:06 PDT 2021
+Loading Browser Profile
+Loading RunManager
+[Scenario:TEST_DIM_Scenarios] [TestCase: 11.SignUp_User_Mgmt_Approval] [Description: 11.SignUp_User_Mgmt_Approval] [Browser: Chrome Headless] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[1] TestCase selected for execution from [//TEST_Regression/SignUp_and_Approval]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Run Manager true
+Continue Execution true
+Shutting Down Thread as there is no need for SelectiveThreading
+Inside Task Run
+Running Iteration 1
+Launching Chrome Headless
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 5063
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620315006.871][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+2021-05-06 08:30:06:05S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Headless Launched
+Step:1   | Object: Browser | Action: Open | Input: SignUp:URL | Conditon:  | @06-May-2021 08:30:06.006
+[DONE]   | Opened Url: https://portal.stage.pacificspecialty.com/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @06-May-2021 08:30:15.015
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:3   | Object: Signup_Link | Action: Click | Input:  | Conditon:  | @06-May-2021 08:30:15.015
+Using @xpath [//*[text()='Sign Up']], Object 'Signup_Link' Found in 25 ms
+[DONE]   | Clicking on Signup_Link
+
+===================================================================================================
+
+Step:4   | Object: Browser | Action: setElementTimeOut | Input: @120 | Conditon:  | @06-May-2021 08:30:26.026
+[DONE]   | Element Wait time changed to 120 second/s
+
+===================================================================================================
+
+Step:5   | Object: ProducerCode_TB | Action: PSIC_Set | Input: SignUp:ProducerCode | Conditon:  | @06-May-2021 08:30:26.026
+Using @xpath [//*[@formcontrolname="producerCode"]], Object 'ProducerCode_TB' Found in 20 ms
+[DONE]   | Entered Text 'B00088' on 'ProducerCode_TB'
+
+===================================================================================================
+
+Step:6   | Object: Role_DD | Action: PSIC_Selectbytext | Input: SignUp:Role | Conditon:  | @06-May-2021 08:30:26.026
+Using @xpath [//select[@formcontrolname="role"]], Object 'Role_DD' Found in 18 ms
+[DONE]   | Item/s 'PRINCIPAL' is/are selected from list Role_DD
+
+===================================================================================================
+
+Step:9   | Object: Browser | Action: RandomAlphabetic | Input: RuntimeData:FName | Conditon: %FirstName% | @06-May-2021 08:30:26.026
+yfmwn
+Adding to runTimeVars %FirstName%:yfmwn
+[PASS]   | yfmwn generated successfully
+
+===================================================================================================
+
+Step:10  | Object: Browser | Action: RandomAlphabetic | Input: RuntimeData:LName | Conditon: %LastName% | @06-May-2021 08:30:27.027
+pbmiy
+Adding to runTimeVars %LastName%:pbmiy
+[PASS]   | pbmiy generated successfully
+
+===================================================================================================
+
+Step:11  | Object: Browser | Action: storeVariableInDataSheet | Input: RuntimeData:FName | Conditon: %FirstName% | @06-May-2021 08:30:28.028
+Getting runTimeVar %FirstName%
+%FirstName%
+Getting runTimeVar %FirstName%
+[DONE]   | Value of variable %FirstName% has been stored into the data sheet
+
+===================================================================================================
+
+Step:12  | Object: Browser | Action: storeVariableInDataSheet | Input: RuntimeData:LName | Conditon: %LastName% | @06-May-2021 08:30:28.028
+Getting runTimeVar %LastName%
+%LastName%
+Getting runTimeVar %LastName%
+[DONE]   | Value of variable %LastName% has been stored into the data sheet
+
+===================================================================================================
+
+Step:13  | Object: FirstName_TB | Action: PSIC_Set | Input: RuntimeData:FName | Conditon:  | @06-May-2021 08:30:28.028
+Using @xpath [//*[@formcontrolname="firstName"]], Object 'FirstName_TB' Found in 12 ms
+[DONE]   | Entered Text 'yfmwn' on 'FirstName_TB'
+
+===================================================================================================
+
+Step:14  | Object: LastName_TB | Action: PSIC_Set | Input: RuntimeData:LName | Conditon:  | @06-May-2021 08:30:28.028
+Using @xpath [//*[@formcontrolname="lastName"]], Object 'LastName_TB' Found in 15 ms
+[DONE]   | Entered Text 'pbmiy' on 'LastName_TB'
+
+===================================================================================================
+
+Step:15  | Object: EmailAddress_TB | Action: PSIC_Set | Input: SignUp:Email | Conditon:  | @06-May-2021 08:30:28.028
+Using @xpath [//*[@formcontrolname="email"]], Object 'EmailAddress_TB' Found in 12 ms
+[DONE]   | Entered Text 'pacificspeciality@outlook.com' on 'EmailAddress_TB'
+
+===================================================================================================
+
+Step:16  | Object: Phone_Office | Action: PSIC_Set | Input: SignUp:Phone_office | Conditon:  | @06-May-2021 08:30:28.028
+Using @xpath [//*[@formcontrolname="officePhone"]], Object 'Phone_Office' Found in 13 ms
+[DONE]   | Entered Text '9566274235' on 'Phone_Office'
+
+===================================================================================================
+
+Step:17  | Object: Phone_Cell | Action: PSIC_Set | Input: SignUp:Phone_cell | Conditon:  | @06-May-2021 08:30:30.030
+Using @xpath [//*[@formcontrolname="cellPhone"]], Object 'Phone_Cell' Found in 12 ms
+[DONE]   | Entered Text '9566274235' on 'Phone_Cell'
+
+===================================================================================================
+
+Step:18  | Object: Browser | Action: Random_Alphanumeric | Input: RuntimeData:UserID | Conditon: %UserID% | @06-May-2021 08:30:30.030
+30dg6BFB
+Adding to runTimeVars %UserID%:30dg6BFB
+[PASS]   | 30dg6BFB generated successfully
+
+===================================================================================================
+
+Step:19  | Object: Browser | Action: storeVariableInDataSheet | Input: RuntimeData:UserID | Conditon: %UserID% | @06-May-2021 08:30:31.031
+Getting runTimeVar %UserID%
+%UserID%
+Getting runTimeVar %UserID%
+[DONE]   | Value of variable %UserID% has been stored into the data sheet
+
+===================================================================================================
+
+Step:20  | Object: UserID | Action: PSIC_Set | Input: RuntimeData:UserID | Conditon: %UserID% | @06-May-2021 08:30:31.031
+Using @xpath [//*[@formcontrolname="userID"]], Object 'UserID' Found in 12 ms
+[DONE]   | Entered Text '30dg6BFB' on 'UserID'
+
+===================================================================================================
+
+Step:21  | Object: Password | Action: PSIC_SetDecrypt | Input: SignUp:Confirm_Password | Conditon:  | @06-May-2021 08:30:31.031
+Using @xpath [//*[@formcontrolname="password"]], Object 'Password' Found in 11 ms
+[DONE]   | Entered Text '********' on 'Password'
+
+===================================================================================================
+
+Step:22  | Object: Confirm_Password | Action: PSIC_SetDecrypt | Input: SignUp:Confirm_Password | Conditon:  | @06-May-2021 08:30:31.031
+Using @xpath [//*[@formcontrolname="confirmPassword"]], Object 'Confirm_Password' Found in 24 ms
+[DONE]   | Entered Text '********' on 'Confirm_Password'
+
+===================================================================================================
+
+Step:23  | Object: Browser | Action: scrollToBottom | Input:  | Conditon:  | @06-May-2021 08:30:31.031
+[DONE]   | Browser Scrolled to []
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: switchToFrameByIndex | Input: @0 | Conditon:  | @06-May-2021 08:30:31.031
+[DONE]   | Webdriver switched to new frame by index[0]
+
+===================================================================================================
+
+Step:2   | Object: Recaptcha_Checkbox | Action: clickByJS | Input:  | Conditon:  | @06-May-2021 08:30:31.031
+Using @xpath [//div[@class="recaptcha-checkbox-border"]], Object 'Recaptcha_Checkbox' Found in 14 ms
+[DONE]   | Clicked on Recaptcha_Checkbox
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @06-May-2021 08:30:31.031
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:25  | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @06-May-2021 08:30:33.033
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:26  | Object: Browser | Action: switchToDefaultContent | Input:  | Conditon:  | @06-May-2021 08:30:38.038
+[DONE]   | Webdriver switched to default content
+
+===================================================================================================
+
+Step:27  | Object: Submit_BTN | Action: clickByJS | Input:  | Conditon:  | @06-May-2021 08:30:38.038
+Using @xpath [//*[@type='button' and text()=' Submit ']], Object 'Submit_BTN' Found in 12 ms
+[DONE]   | Clicked on Submit_BTN
+
+===================================================================================================
+
+Step:28  | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @06-May-2021 08:30:38.038
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:29  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @06-May-2021 08:30:43.043
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:30  | Object: ApprovalPending_Txt | Action: verifyElementDisplayed | Input:  | Conditon:  | @06-May-2021 08:30:44.044
+Using @xpath [//*[text()='Approval Pending!']], Object 'ApprovalPending_Txt' Found in 15 ms
+[PASS]   | Element [ApprovalPending_Txt] is Displayed
+
+===================================================================================================
+
+Step:31  | Object: ApprovalPending_Msg | Action: verifyElementDisplayed | Input:  | Conditon:  | @06-May-2021 08:30:45.045
+Using @xpath [//div[contains(text(),'Your account is pending for an approval with a Principal/Manager.')]], Object 'ApprovalPending_Msg' Found in 11 ms
+[PASS]   | Element [ApprovalPending_Msg] is Displayed
+
+===================================================================================================
+
+Step:32  | Object: OK_BTN | Action: Click | Input:  | Conditon:  | @06-May-2021 08:30:46.046
+Using @xpath [(//button[contains(text(),'OK')])[3]], Object 'OK_BTN' Found in 13 ms
+[DONE]   | Clicking on OK_BTN
+
+===================================================================================================
+
+Step:33  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @06-May-2021 08:30:55.055
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:1   | Object: Browser | Action: Open | Input: DIM_Login:URL | Conditon:  | @06-May-2021 08:30:59.059
+2021-05-06 08:30:59:05S -0700 [OFF ] com.cognizant.cognizantits.engine.commands.Basic Open:null
+org.openqa.selenium.InvalidArgumentException: invalid argument
+  (Session info: headless chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at com.cognizant.cognizantits.engine.commands.Basic.Open(Basic.java:199)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[FAIL]   | invalid argument
+  (Session info: headless chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+
+===================================================================================================
+
+[FAIL]   | invalid argument
+  (Session info: headless chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+
+===================================================================================================
+
+2021-05-06 08:31:08:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:invalid argument
+  (Session info: headless chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+com.cognizant.cognizantits.engine.execution.exception.ForcedException: invalid argument
+  (Session info: headless chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+	at com.cognizant.cognizantits.engine.commands.Basic.Open(Basic.java:208)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @200 | Conditon:  | @06-May-2021 08:31:08.008
+[DONE]   | Element Wait time changed to 200 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @06-May-2021 08:31:08.008
+Exception in thread "AWT-EventQueue-0" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 0
+	at com.cognizant.cognizantits.ide.main.utils.table.XTableUtils.copyToClipboard(XTableUtils.java:44)
+	at com.cognizant.cognizantits.ide.main.utils.keys.ClipboardKeyAdapter.keyReleased(ClipboardKeyAdapter.java:42)
+	at java.desktop/java.awt.AWTEventMulticaster.keyReleased(AWTEventMulticaster.java:268)
+	at java.desktop/java.awt.Component.processKeyEvent(Component.java:6596)
+	at java.desktop/javax.swing.JComponent.processKeyEvent(JComponent.java:2849)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1950)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:870)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1139)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:1009)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:835)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4892)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+Exception in thread "AWT-EventQueue-0" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.cognizant.cognizantits.ide.main.utils.table.XTableUtils.pasteFromClipboard(XTableUtils.java:83)
+	at com.cognizant.cognizantits.ide.main.utils.keys.ClipboardKeyAdapter.keyReleased(ClipboardKeyAdapter.java:52)
+	at java.desktop/java.awt.AWTEventMulticaster.keyReleased(AWTEventMulticaster.java:268)
+	at java.desktop/java.awt.Component.processKeyEvent(Component.java:6596)
+	at java.desktop/javax.swing.JComponent.processKeyEvent(JComponent.java:2849)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1950)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:870)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1139)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:1009)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:835)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4892)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2021-05-06 08:34:28:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$679/0x0000000100843440@71a0135c (tried for 200 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'UserLogin_TXT' in stipulated Time '200' Seconds
+[FAIL]   | Seems Like the Element [UserLogin_TXT] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-06 08:34:32:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [UserLogin_TXT] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [UserLogin_TXT] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.VerifyElement.verifyElementDisplayed(VerifyElement.java:66)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: DIM_Login:Username | Conditon:  | @06-May-2021 08:34:32.032
+2021-05-06 08:37:53:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$679/0x0000000100843440@507ec592 (tried for 200 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'UserName_TB' in stipulated Time '200' Seconds
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: DIM_Login:Password | Conditon:  | @06-May-2021 08:37:53.053
+Exception in thread "AWT-EventQueue-0" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at com.cognizant.cognizantits.ide.main.utils.table.XTableUtils.pasteFromClipboard(XTableUtils.java:83)
+	at com.cognizant.cognizantits.ide.main.utils.keys.ClipboardKeyAdapter.keyReleased(ClipboardKeyAdapter.java:52)
+	at java.desktop/java.awt.AWTEventMulticaster.keyReleased(AWTEventMulticaster.java:268)
+	at java.desktop/java.awt.Component.processKeyEvent(Component.java:6596)
+	at java.desktop/javax.swing.JComponent.processKeyEvent(JComponent.java:2849)
+	at java.desktop/java.awt.Component.processEvent(Component.java:6412)
+	at java.desktop/java.awt.Container.processEvent(Container.java:2263)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5011)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1950)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:870)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1139)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:1009)
+	at java.desktop/java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:835)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:4892)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2321)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2772)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4843)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:772)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:95)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:745)
+	at java.desktop/java.awt.EventQueue$5.run(EventQueue.java:743)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2021-05-06 08:39:22:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:22:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:22:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:22:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:22:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:22:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:23:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:23:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:23:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:23:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:23:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:23:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:29:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:29:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:29:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:29:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:29:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:29:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:30:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:30:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:30:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:39:30:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-06 08:39:30:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-06 08:39:30:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-06 08:41:13:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$679/0x0000000100843440@7e7b24ae (tried for 200 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.rczjVI}, goog:chromeOptions: {debuggerAddress: localhost:44917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1402cd2ef32a64f64ea0735a9b722a20
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Password_TB' in stipulated Time '200' Seconds
+
+---------------------------------------------------
+Testcase Name        : TEST_DIM_Scenarios:11.SignUp_User_Mgmt_Approval
+Executed Steps       : 37
+Passed Steps         : 34
+Failed Steps         : 3
+Time Taken           : 00:11:07
+-----------------------------------------------------
+
+Run Finished on Thu May 06 08:41:13 PDT 2021
+-----------------------------------------------------
+ExecutionDate        : 06-May-2021 08-30-06
+Executed TestCases   : 1
+Passed TestCases     : 0
+Failed TestCases     : 1
+Time Taken           : 00:11:07
+ReportPath           : file:////home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/Projects/PSIC_Digital_DIM/Results/TestExecution/TEST_Regression/SignUp_and_Approval/06-May-2021 08-30-06/summary.html
+-----------------------------------------------------

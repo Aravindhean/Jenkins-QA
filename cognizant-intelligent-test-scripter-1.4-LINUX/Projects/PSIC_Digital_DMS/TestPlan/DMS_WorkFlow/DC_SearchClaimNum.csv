@@ -1,0 +1,16 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Claims,"Click the [<Object>] ",Click,,,DuckCreek_FileNote
+2,ClaimNum,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DC_FileNote:ClaimNo,,DuckCreek_FileNote
+3,Find_BTN,"Click the [<Object>] ",Click,,,DuckCreek_FileNote
+4,Browser,Wait for [<Data>] milli seconds,pause,@3000,,
+5,Browser,switching to window by title [<Data>],switchToWindowByTitleContains,DC_FileNote:ClaimNo,,
+"*6",Browser,Switch to frame which has index: [<Data>],switchToFrameByIndex,@0,,
+7,Claims,"Click the [<Object>] ",Click,,,DuckCreek_FileNote
+"//8",Browser,switching to window by title [<Data>],switchToWindowByTitleContains,DC_FileNote:ClaimNo,,
+9,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+10,ViewNotes_Link,Click the [<Object>] if it is displayed,ClickIfVisible,,,DuckCreek_FileNote
+11,Loading,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0;display:none;,style,DuckCreek_FileNote
+12,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
+13,SearchbySubject,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DC_FileNote:Subject,,DuckCreek_FileNote
+14,Search_BTN,"Click the [<Object>] ",Click,,,DuckCreek_FileNote
+15,FileNote,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,DuckCreek_FileNote

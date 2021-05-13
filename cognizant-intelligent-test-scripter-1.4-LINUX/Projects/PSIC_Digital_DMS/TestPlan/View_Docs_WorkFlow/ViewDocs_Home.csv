@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Profile_Icon,Click the [<Object>] and Wait for Page to be loaded,clickAndWait,,,Task_Queue
+2,Home_Icon,Click on [<Object>],clickByJS,,,Task_Queue
+3,Browser,"Take a Screen Shot ",takeScreenshot,,,
+4,Browser,Wait for [<Data>] milli seconds,pause,@5000,,

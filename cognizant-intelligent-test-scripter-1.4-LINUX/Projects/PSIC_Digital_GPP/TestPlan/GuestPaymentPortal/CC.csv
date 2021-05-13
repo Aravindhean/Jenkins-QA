@@ -1,0 +1,10 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Payment_Method,Select item in [<Object>] which has the value: [<Data>]  if the test data is available,PSIC_Selectbytext,GuestPayment:Payment_Method,,GuestPaymentPortal
+2,CC_Toggle_txt,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,GuestPaymentPortal
+"//3",CC_Toggle_BTN,"Click the [<Object>] ",Click,,,GuestPaymentPortal
+4,Browser,Wait for [<Data>] milli seconds,pause,@10000,,
+5,Browser,"Take a Screen Shot ",takeScreenshot,,,
+6,Execute,,GuestPaymentPortal:Proceed_Payment,,,
+7,Execute,,GuestPaymentPortal:Make_a_Payment,,,
+8,Execute,,GuestPaymentPortal:CreditCard_PaymentDetails,,,
+9,Execute,,GuestPaymentPortal:Review,,,

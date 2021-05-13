@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Store_Columnvalues_CountUI,Get the number of the row having the desired data [<Data>] in a web table and store it in a variable,PSIC_getRowNumber,Claims_RuntimeData:CountColumnUI,%Count%,Task_Queue
+2,Store_Columnvalues_CountUI,Get the number of the row having the desired data [<Data>] in a web table and store it in a variable,getRowCount,Claims_RuntimeData:CountColumnUI,,Task_Queue
+3,Store_Columnvalues_CountUI,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,Claims_RuntimeData:CountColumnUI,%Count%,Task_Queue

@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,RoutingNum_Required,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GuestPaymentPortal
+2,Accnum_Required,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GuestPaymentPortal
+3,AccountName_Required,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GuestPaymentPortal

@@ -1,0 +1,5 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,DocType_TXT,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,TaskQueue_DetailedPage
+2,Document_DD,Count the number of rows in a web table and store it in variable,PSIC_getDocDDvalue,Claims_RuntimeData:CountColumnUI,%Doc%,TaskQueue_DetailedPage
+3,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,Claims_RuntimeData:CountColumnUI,%Doc%,
+4,Browser,"Take a Screen Shot ",takeScreenshot,,,

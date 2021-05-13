@@ -1,0 +1,15 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Open the Url [<Data>] in the Browser,Open,DMS_Login:Claims_Url,,
+2,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@200,,Login-Page
+3,UserName_TB,"Click the [<Object>] ",Click,,,Login-Page
+4,UserName_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DMS_Login:Claims_User,,Login-Page
+5,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@50,,
+6,Password_TB,"Click the [<Object>] ",Click,,,Login-Page
+7,Password_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_SetDecrypt,DMS_Login:Claims_Pwd,,Login-Page
+8,Login_BTN,Click on [<Object>],clickByJS,,,Login-Page
+9,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+10,TaskQueue_TXT,"Wait for [<Object>] to be visible ",waitForElementToBeVisible,,,TaskQueue_DetailedPage
+11,TaskQueue_TXT,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,TaskQueue_DetailedPage
+12,Browser,"Refresh current page ",refreshDriver,,,
+13,Browser,Wait for [<Data>] milli seconds,pause,@10000,,
+14,Browser,"Take a Screen Shot ",takeScreenshot,,,

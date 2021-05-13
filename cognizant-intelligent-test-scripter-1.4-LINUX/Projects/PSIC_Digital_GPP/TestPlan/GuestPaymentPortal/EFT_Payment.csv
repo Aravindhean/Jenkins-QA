@@ -1,0 +1,21 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Browser,Wait for Page to be loaded,waitForPageLoaded,,,
+2,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+3,DownPayment_DD,Enter the value [<Data>] in the Field [<Object>],PSIC_Set,DC:DownPayment,,Duckcreek_Policy
+4,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+5,Browser,"Take a Screen Shot ",takeScreenshot,,,
+6,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+7,Browser,"Take a Screen Shot ",takeScreenshot,,,
+"*8",AccountType_DD,"Set [<Data>] on [<Object>] if the test data is available ",PSIC_setByJS,DC:AccType,,Duckcreek_Policy
+9,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+10,PayorName_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:PayorName,,Duckcreek_Policy
+11,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+12,RoutingNo_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:Routing,,Duckcreek_Policy
+13,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+14,AccountNo_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:AccNo,,Duckcreek_Policy
+15,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+16,Browser,"Take a Screen Shot ",takeScreenshot,,,
+17,ValidatePaymentDetails_BTN,Click on [<Object>],clickByJS,,,Duckcreek_Policy
+18,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+19,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+20,Browser,Wait for Page to be loaded,waitForPageLoaded,,,

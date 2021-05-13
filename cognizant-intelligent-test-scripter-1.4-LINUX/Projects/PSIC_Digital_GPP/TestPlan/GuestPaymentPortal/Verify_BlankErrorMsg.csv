@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,PolicyDetailsErr,Assert if [<Object>] element is displayed,assertElementDisplayed,,,GuestPaymentPortal
+2,RefNumErr,,assertElementDisplayed,,,GuestPaymentPortal
+3,ZipCodeErr,,assertElementDisplayed,,,GuestPaymentPortal

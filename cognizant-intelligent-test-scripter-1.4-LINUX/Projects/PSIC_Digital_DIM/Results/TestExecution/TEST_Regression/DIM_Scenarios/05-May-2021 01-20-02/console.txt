@@ -1,0 +1,1744 @@
+Run Information
+========================
+cognizant.intelligent.test.scripter.engine : ${project.version}
+java.runtime.name    : OpenJDK Runtime Environment
+java.version         : 11.0.11
+java.home            : /usr/lib/jvm/java-11-amazon-corretto.x86_64
+os.name              : Linux
+os.arch              : amd64
+os.version           : 4.14.231-173.360.amzn2.x86_64
+file.encoding        : UTF-8
+========================
+Run Started on Wed May 05 01:20:02 PDT 2021
+Loading Browser Profile
+Loading RunManager
+[Scenario:TEST_DIM_Scenarios] [TestCase: 2.OneSpot_ACCESS] [Description: 2.OneSpot_ACCESS] [Browser: Chrome] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+[Scenario:TEST_DIM_Scenarios] [TestCase: 3.VALIDATE_PhoneNo_SQL] [Description: 3.VALIDATE_PhoneNo_SQL] [Browser: Chrome] [BrowserVersion: Default] [Platform: ANY][ExistingBrowser: false]
+----------------------------------------------------------
+[2] TestCases selected for execution from [//TEST_Regression/DIM_Scenarios]
+----------------------------------------------------------
+Initializing Report
+ApiLink not available!!
+Run Manager true
+Continue Execution true
+Shutting Down Thread as there is no need for SelectiveThreading
+Inside Task Run
+Running Iteration 1
+Launching Chrome
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 30102
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620202804.081][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+2021-05-05 01:20:04:05S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Browser | Action: Open | Input: DIM_Login:URL | Conditon:  | @05-May-2021 01:20:04.004
+[DONE]   | Opened Url: https://test.psicdemo.com/psic/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @200 | Conditon:  | @05-May-2021 01:20:13.013
+[DONE]   | Element Wait time changed to 200 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:20:13.013
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 25 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: DIM_Login:Username | Conditon:  | @05-May-2021 01:20:15.015
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 15 ms
+[DONE]   | Entered Text 'Salesrep1' on 'UserName_TB'
+
+===================================================================================================
+
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: DIM_Login:Password | Conditon:  | @05-May-2021 01:20:15.015
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 12 ms
+[DONE]   | Entered Text '********' on 'Password_TB'
+
+===================================================================================================
+
+Step:6   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @05-May-2021 01:20:16.016
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 11 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:7   | Object: Browser | Action: setElementTimeOut | Input: @10 | Conditon:  | @05-May-2021 01:20:16.016
+[DONE]   | Element Wait time changed to 10 second/s
+
+===================================================================================================
+
+Step:8   | Object: Browser | Action: pause | Input: @2000 | Conditon:  | @05-May-2021 01:20:16.016
+[DONE]   | Thread sleep for '2000
+
+===================================================================================================
+
+Step:9   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:20:18.018
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:10  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:20:20.020
+2021-05-05 01:20:30:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@215714ce (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.GWHMgt}, goog:chromeOptions: {debuggerAddress: localhost:41961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4fda0b25d774a98a6e5acfc6580e723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Welcome_TXT' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:20:32:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.VerifyElement.verifyElementDisplayed(VerifyElement.java:66)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:11  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:20:32.032
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:12  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:20:34.034
+2021-05-05 01:20:44:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@626e9ada (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.GWHMgt}, goog:chromeOptions: {debuggerAddress: localhost:41961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4fda0b25d774a98a6e5acfc6580e723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Welcome_TXT' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:20:47:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.VerifyElement.verifyElementDisplayed(VerifyElement.java:66)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:1   | Object: OneSpot_Link | Action: Click | Input:  | Conditon:  | @05-May-2021 01:20:47.047
+2021-05-05 01:20:57:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@24dac29e (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.GWHMgt}, goog:chromeOptions: {debuggerAddress: localhost:41961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4fda0b25d774a98a6e5acfc6580e723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'OneSpot_Link' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [OneSpot_Link] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:20:59:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [OneSpot_Link] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [OneSpot_Link] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:2   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @05-May-2021 01:20:59.059
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:21:04.004
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:1   | Object: Profile_Icon | Action: Click | Input:  | Conditon:  | @05-May-2021 01:21:06.006
+2021-05-05 01:21:16:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@12cba159 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.GWHMgt}, goog:chromeOptions: {debuggerAddress: localhost:41961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4fda0b25d774a98a6e5acfc6580e723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Profile_Icon' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Profile_Icon] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:21:18:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Profile_Icon] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Profile_Icon] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:2   | Object: User_Signout | Action: waitForElementToBePresent | Input:  | Conditon:  | @05-May-2021 01:21:18.018
+2021-05-05 01:21:28:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@1ac4a2b4 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.GWHMgt}, goog:chromeOptions: {debuggerAddress: localhost:41961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4fda0b25d774a98a6e5acfc6580e723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:87)
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBePresent(WaitFor.java:174)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'User_Signout' in stipulated Time '10' Seconds
+2021-05-05 01:21:28:05S -0700 [OFF ] com.cognizant.cognizantits.engine.commands.WaitFor waitForElementToBePresent:null
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBePresent(WaitFor.java:180)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[FAIL]   | Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:21:30:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.ForcedException: Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBePresent(WaitFor.java:185)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:3   | Object: User_Signout | Action: Click | Input:  | Conditon:  | @05-May-2021 01:21:30.030
+2021-05-05 01:21:41:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@3b2e47d7 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.GWHMgt}, goog:chromeOptions: {debuggerAddress: localhost:41961}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b4fda0b25d774a98a6e5acfc6580e723
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'User_Signout' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [User_Signout] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:21:43:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [User_Signout] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [User_Signout] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:4   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @05-May-2021 01:21:43.043
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:21:44.044
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:6   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:21:46.046
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 7 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+
+---------------------------------------------------
+Testcase Name        : TEST_DIM_Scenarios:2.OneSpot_ACCESS
+Executed Steps       : 21
+Passed Steps         : 15
+Failed Steps         : 6
+Time Taken           : 00:01:45
+-----------------------------------------------------
+
+Inside Task Run
+Running Iteration 1
+Launching Chrome
+Launching Local Driver
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 12588
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1620202908.802][WARNING]: This version of ChromeDriver has not been tested with Chrome version 90.
+2021-05-05 01:21:48:05S -0700 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+Chrome Launched
+Step:1   | Object: Browser | Action: Open | Input: DIM_Login:URL | Conditon:  | @05-May-2021 01:21:48.048
+[DONE]   | Opened Url: https://test.psicdemo.com/psic/signin
+
+===================================================================================================
+
+Step:2   | Object: Browser | Action: setElementTimeOut | Input: @200 | Conditon:  | @05-May-2021 01:21:57.057
+[DONE]   | Element Wait time changed to 200 second/s
+
+===================================================================================================
+
+Step:3   | Object: UserLogin_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:21:57.057
+Using @xpath [//*[@class='okta-form-title o-form-head' and text()='USER LOGIN']], Object 'UserLogin_TXT' Found in 15 ms
+[PASS]   | Element [UserLogin_TXT] is Displayed
+
+===================================================================================================
+
+Step:4   | Object: UserName_TB | Action: PSIC_Set | Input: DIM_Login:Username | Conditon:  | @05-May-2021 01:22:00.000
+Using @xpath [//input[@id="okta-signin-username"]], Object 'UserName_TB' Found in 11 ms
+[DONE]   | Entered Text 'Autouser' on 'UserName_TB'
+
+===================================================================================================
+
+Step:5   | Object: Password_TB | Action: PSIC_SetDecrypt | Input: DIM_Login:Password | Conditon:  | @05-May-2021 01:22:00.000
+Using @xpath [//input[@id="okta-signin-password"]], Object 'Password_TB' Found in 11 ms
+[DONE]   | Entered Text '********' on 'Password_TB'
+
+===================================================================================================
+
+Step:6   | Object: Login_BTN | Action: Click | Input:  | Conditon:  | @05-May-2021 01:22:00.000
+Using @xpath [//input[@id="okta-signin-submit"]], Object 'Login_BTN' Found in 10 ms
+[DONE]   | Clicking on Login_BTN
+
+===================================================================================================
+
+Step:7   | Object: Browser | Action: setElementTimeOut | Input: @10 | Conditon:  | @05-May-2021 01:22:00.000
+[DONE]   | Element Wait time changed to 10 second/s
+
+===================================================================================================
+
+Step:8   | Object: Browser | Action: pause | Input: @2000 | Conditon:  | @05-May-2021 01:22:00.000
+[DONE]   | Thread sleep for '2000
+
+===================================================================================================
+
+Step:9   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:22:02.002
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:10  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:22:04.004
+2021-05-05 01:22:14:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@4fe5418b (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Welcome_TXT' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:22:16:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.VerifyElement.verifyElementDisplayed(VerifyElement.java:66)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:11  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:22:16.016
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:12  | Object: Welcome_TXT | Action: verifyElementDisplayed | Input:  | Conditon:  | @05-May-2021 01:22:18.018
+2021-05-05 01:22:29:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@68015d86 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Welcome_TXT' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:22:31:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Welcome_TXT] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.VerifyElement.verifyElementDisplayed(VerifyElement.java:66)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:1   | Object: Profile_Icon | Action: Click | Input:  | Conditon:  | @05-May-2021 01:22:31.031
+2021-05-05 01:22:41:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@c31ef09 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Profile_Icon' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Profile_Icon] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:22:43:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Profile_Icon] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Profile_Icon] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:2   | Object: Update_Profile | Action: Click | Input:  | Conditon:  | @05-May-2021 01:22:43.043
+2021-05-05 01:22:53:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@79f837c3 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Update_Profile' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Update_Profile] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:22:55:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Update_Profile] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Update_Profile] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:3   | Object: OK_BTN | Action: Click | Input:  | Conditon:  | @05-May-2021 01:22:55.055
+2021-05-05 01:23:05:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@7f3dc70f (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'OK_BTN' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [OK_BTN] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:23:08:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [OK_BTN] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [OK_BTN] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:4   | Object: Browser | Action: pause | Input: @5000 | Conditon:  | @05-May-2021 01:23:08.008
+[DONE]   | Thread sleep for '5000
+
+===================================================================================================
+
+Step:5   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:23:13.013
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Step:3   | Object: Browser | Action: switchToWindowByTitle | Input: @Pacificspecialty-QA-963099 - Settings | Conditon:  | @05-May-2021 01:23:15.015
+[FAIL]   | Can't find a Window by the given Title [Pacificspecialty-QA-963099 - Settings]
+
+===================================================================================================
+
+2021-05-05 01:23:17:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Can't find a Window by the given Title [Pacificspecialty-QA-963099 - Settings]
+com.cognizant.cognizantits.engine.execution.exception.ForcedException: Can't find a Window by the given Title [Pacificspecialty-QA-963099 - Settings]
+	at com.cognizant.cognizantits.engine.commands.SwitchTo.switchToWindow(SwitchTo.java:116)
+	at com.cognizant.cognizantits.engine.commands.SwitchTo.switchToWindowByTitle(SwitchTo.java:122)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:1   | Object: Browser | Action: switchToFrameByIndex | Input: @0 | Conditon:  | @05-May-2021 01:23:17.017
+[DONE]   | Webdriver switched to new frame by index[0]
+
+===================================================================================================
+
+Step:2   | Object: Edit_Link | Action: waitForElementToBePresent | Input:  | Conditon:  | @05-May-2021 01:23:17.017
+2021-05-05 01:23:27:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@364008c3 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:87)
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBePresent(WaitFor.java:174)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Edit_Link' in stipulated Time '10' Seconds
+2021-05-05 01:23:27:05S -0700 [OFF ] com.cognizant.cognizantits.engine.commands.WaitFor waitForElementToBePresent:null
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBePresent(WaitFor.java:180)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[FAIL]   | Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:23:29:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.lambda$0(TestCaseRunner.java:327)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.reportOnError(TestCaseRunner.java:326)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.onRuntimeException(TestCaseRunner.java:290)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:365)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 24 more
+
+2021-05-05 01:23:29:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.ForcedException: Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBePresent(WaitFor.java:185)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:3   | Object: Edit_Link | Action: waitForElementToBeClickable | Input:  | Conditon:  | @05-May-2021 01:23:29.029
+2021-05-05 01:23:39:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@332f6b40 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Edit_Link' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:23:40:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.lambda$0(TestCaseRunner.java:327)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.reportOnError(TestCaseRunner.java:326)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.onRuntimeException(TestCaseRunner.java:290)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:365)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 24 more
+
+2021-05-05 01:23:40:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElement(WaitFor.java:221)
+	at com.cognizant.cognizantits.engine.commands.WaitFor.waitForElementToBeClickable(WaitFor.java:101)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:4   | Object: Edit_Link | Action: clickByJS | Input:  | Conditon:  | @05-May-2021 01:23:40.040
+2021-05-05 01:23:51:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@6c49dc6 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Edit_Link' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Edit_Link] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:23:52:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.lambda$0(TestCaseRunner.java:327)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.reportOnError(TestCaseRunner.java:326)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.onRuntimeException(TestCaseRunner.java:290)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:365)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 24 more
+
+2021-05-05 01:23:52:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Edit_Link] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Edit_Link] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.JSCommands.clickByJS(JSCommands.java:54)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:5   | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @05-May-2021 01:23:52.052
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:6   | Object: PhoneNo_TB | Action: clearByJS | Input:  | Conditon:  | @05-May-2021 01:23:53.053
+2021-05-05 01:24:04:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@591e83f6 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'PhoneNo_TB' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [PhoneNo_TB] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:24:05:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.lambda$0(TestCaseRunner.java:327)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.reportOnError(TestCaseRunner.java:326)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.onRuntimeException(TestCaseRunner.java:290)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:365)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 24 more
+
+2021-05-05 01:24:05:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [PhoneNo_TB] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [PhoneNo_TB] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.JSCommands.clearByJS(JSCommands.java:110)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:7   | Object: PhoneNo_TB | Action: PSIC_Set | Input: OKTA_INFO:PhoneNo | Conditon:  | @05-May-2021 01:24:05.005
+2021-05-05 01:24:16:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@6dc7ce79 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'PhoneNo_TB' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [PhoneNo_TB] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:24:17:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.lambda$0(TestCaseRunner.java:327)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.reportOnError(TestCaseRunner.java:326)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.onRuntimeException(TestCaseRunner.java:290)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:365)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 24 more
+
+2021-05-05 01:24:17:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [PhoneNo_TB] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [PhoneNo_TB] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at PSICMethods.basic_PSIC.PSIC_Set(basic_PSIC.java:220)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:8   | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:24:17.017
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+2021-05-05 01:24:19:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.commands.CommonMethods.takeScreenshot(CommonMethods.java:284)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 27 more
+
+Step:9   | Object: Save_BTN | Action: Click | Input:  | Conditon:  | @05-May-2021 01:24:19.019
+2021-05-05 01:24:29:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@354bff4 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Save_BTN' in stipulated Time '10' Seconds
+[FAIL]   | Seems Like the Element [Save_BTN] is Not Present/Found in the page Try Adding wait or heal it
+
+===================================================================================================
+
+2021-05-05 01:24:31:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.lambda$0(TestCaseRunner.java:327)
+	at java.base/java.util.Optional.ifPresent(Optional.java:183)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.reportOnError(TestCaseRunner.java:326)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.onRuntimeException(TestCaseRunner.java:290)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:365)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.IllegalArgumentException: Width (1920) and height (0) cannot be <= 0
+	at java.desktop/java.awt.image.DirectColorModel.createCompatibleWritableRaster(DirectColorModel.java:1016)
+	at java.desktop/java.awt.image.BufferedImage.<init>(BufferedImage.java:324)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:140)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 24 more
+
+2021-05-05 01:24:31:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Save_BTN] is Not Present/Found in the page Try Adding wait or heal it
+com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Save_BTN] is Not Present/Found in the page Try Adding wait or heal it
+	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
+	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:63)
+	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Step:10  | Object: Browser | Action: pause | Input: @1000 | Conditon:  | @05-May-2021 01:24:31.031
+[DONE]   | Thread sleep for '1000
+
+===================================================================================================
+
+Step:11  | Object: Phone_CP | Action: assertElementTextMatches | Input: OKTA_INFO:PhoneNo | Conditon:  | @05-May-2021 01:24:32.032
+2021-05-05 01:24:42:05S -0700 [OFF ] com.cognizant.cognizantits.engine.drivers.AutomationObject getElements:null
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.cognizant.cognizantits.engine.drivers.AutomationObject$$Lambda$661/0x00000001000ed040@5d81dc3d (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getElements(AutomationObject.java:303)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.getWElements(AutomationObject.java:255)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElements(AutomationObject.java:242)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:118)
+	at com.cognizant.cognizantits.engine.drivers.AutomationObject.findElement(AutomationObject.java:111)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:94)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+Couldn't find Object 'Phone_CP' in stipulated Time '10' Seconds
+[FAIL]   | Cannot find locator for "Phone_CP" in page spec
+
+===================================================================================================
+
+2021-05-05 01:24:44:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.reporting.util.ReportUtils takeScreenshot:null
+java.lang.RuntimeException: Error making screenshot
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:186)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createScreenShot(SeleniumDriver.java:164)
+	at com.cognizant.cognizantits.engine.reporting.util.ReportUtils.takeScreenshot(ReportUtils.java:86)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeSSAndPutDetail(HtmlTestCaseHandler.java:288)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.takeScreenShot(HtmlTestCaseHandler.java:249)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.putStatus(HtmlTestCaseHandler.java:226)
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:115)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:121)
+	at com.cognizant.cognizantits.engine.commands.galenCommands.Report.onResult(Report.java:73)
+	at com.cognizant.cognizantits.engine.commands.galenCommands.Report.onError(Report.java:62)
+	at com.cognizant.cognizantits.engine.commands.galenCommands.General.validate(General.java:117)
+	at com.cognizant.cognizantits.engine.commands.galenCommands.General.validate(General.java:130)
+	at com.cognizant.cognizantits.engine.commands.galenCommands.Text.assertElementText(Text.java:42)
+	at com.cognizant.cognizantits.engine.commands.galenCommands.Text.assertElementTextMatches(Text.java:96)
+	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'a-3r8gwg1klqwgb', ip: '10.10.111.189', os.name: 'Linux', os.arch: 'amd64', os.version: '4.14.231-173.360.amzn2.x86_64', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.fFfLjx}, goog:chromeOptions: {debuggerAddress: localhost:35263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fd83bf6c6d4c742fea6898bfcea69290
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at com.galenframework.utils.GalenUtils.makeFullScreenshot(GalenUtils.java:118)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.getScreenShotFromGalen(SeleniumDriver.java:197)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.createNewScreenshot(SeleniumDriver.java:183)
+	... 32 more
+
+Step:12  | Object: Browser | Action: takeScreenshot | Input:  | Conditon:  | @05-May-2021 01:24:44.044
+[PASS]   | Screenshot is taken
+
+===================================================================================================
+
+Couldn't take ScreenShot Driver is closed or connection is lost with driver
+Step:1   | Object: Database | Action: initDBConnection | Input:  | Conditon:  | @05-May-2021 01:24:44.044
+2021-05-05 01:24:44:05S -0700 [SEVERE] com.cognizant.cognizantits.engine.core.Task runIteration:Driver Chrome Closed / Could not be reached
+com.cognizant.cognizantits.engine.execution.exception.DriverClosedException: Driver Chrome Closed / Could not be reached
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.isAlive(SeleniumDriver.java:148)
+	at com.cognizant.cognizantits.engine.core.CommandControl.canIFindElement(CommandControl.java:107)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:93)
+	at com.cognizant.cognizantits.engine.core.CommandControl.sync(CommandControl.java:173)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:160)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
+	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
+	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+[FAIL]   | Driver Chrome Closed / Could not be reached
+
+===================================================================================================
+
+
+---------------------------------------------------
+Testcase Name        : TEST_DIM_Scenarios:3.VALIDATE_PhoneNo_SQL
+Executed Steps       : 31
+Passed Steps         : 17
+Failed Steps         : 14
+Time Taken           : 00:02:56
+-----------------------------------------------------
+
+Run Finished on Wed May 05 01:24:44 PDT 2021
+-----------------------------------------------------
+ExecutionDate        : 05-May-2021 01-20-02
+Executed TestCases   : 2
+Passed TestCases     : 0
+Failed TestCases     : 2
+Time Taken           : 00:04:42
+ReportPath           : file:////home/ab773031t/Documents/cognizant-intelligent-test-scripter-1.4/Projects/PSIC_Digital_DIM/Results/TestExecution/TEST_Regression/DIM_Scenarios/05-May-2021 01-20-02/summary.html
+-----------------------------------------------------

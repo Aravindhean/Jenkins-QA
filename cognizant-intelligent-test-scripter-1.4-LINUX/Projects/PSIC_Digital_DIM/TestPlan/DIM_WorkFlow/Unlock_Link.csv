@@ -1,0 +1,14 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,UserID_TXT,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,DIM_Login:Username,,Login-Page
+2,Reset_eMail,Click on [<Object>],clickByJS,,,Login-Page
+3,Browser,Add a variable to access within testcase,AddVar,DIM_Login:Mail_UserID,%OutlookUsername%,
+4,Browser,Add a variable to access within testcase,AddVar,DIM_Login:Mail_Pwd,%OutlookPassword%,
+5,Browser,Read the UserName and Password from user-defined values,PSIC_ReadUserName,,"%OutlookUsername%,%OutlookPassword%",
+6,Browser,Wait for [<Data>] milli seconds,pause,@10000,,
+7,Browser,Read the Unlock Account link,PSIC_UnlockAcc,RuntimeData:Unlock_Link,%Unlock%,
+8,Browser,store variable value [<Condition>] in data sheet[<Data>],storeVariableInDataSheet,RuntimeData:Unlock_Link,%Unlock%,
+9,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+10,Browser,Open the Url [<Data>] in the Browser,Open,RuntimeData:Unlock_Link,,
+11,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+12,Browser,"Take a Screen Shot ",takeScreenshot,,,
+13,Browser,Delete the Unlock Account link,PSIC_DelUnlockMail,,,

@@ -1,0 +1,7 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Goback,Click on [<Object>],clickByJS,,,Upload_Documents_Info
+2,Browser,Wait for [<Data>] milli seconds,pause,@10000,,
+3,Browser,"Take a Screen Shot ",takeScreenshot,,,
+4,PSIC_Logo,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,PP_TaskCenter
+5,TaskCenter_Header,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,PP_TaskCenter
+6,Searchicon,Verify if [<Object>] element is displayed,verifyElementDisplayed,,,PP_TaskCenter

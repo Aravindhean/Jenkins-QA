@@ -1,0 +1,8 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Goback,Click on [<Object>],clickByJS,,,Upload_Documents_Info
+2,Browser,Wait for [<Data>] milli seconds,pause,@10000,,
+3,Browser,"Take a Screen Shot ",takeScreenshot,,,
+4,TaskCenter_Green,Assert if [<Object>] element is displayed,assertElementDisplayed,,,PP_TaskCenter
+5,Expand_CardTItle,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,TaskCenter:CardName,REPLACE,PP_TaskCenter
+6,Expand_CardTItle,Assert if [<Object>] element is displayed,assertElementDisplayed,,,PP_TaskCenter
+7,Browser,"Take a Screen Shot ",takeScreenshot,,,

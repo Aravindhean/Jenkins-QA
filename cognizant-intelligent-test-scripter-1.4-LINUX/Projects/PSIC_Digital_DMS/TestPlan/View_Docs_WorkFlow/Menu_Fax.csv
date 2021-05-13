@@ -1,0 +1,17 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,Menu,Click the [<Object>] and Wait for Page to be loaded,clickAndWait,,,ViewDocuments
+2,Menu,"Click and hold the [<Object>] element ",clickAndHoldElement,,,ViewDocuments
+3,Fax,"Click the [<Object>] ",Click,,,ViewDocuments
+4,Fax_FileName,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,ViewDocument:FileName,,ViewDocuments
+5,Fax_Number,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,ViewDocument:FaxNumber,,ViewDocuments
+6,Recipient_Name,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,ViewDocument:Recipient_Name,,ViewDocuments
+7,Recipient_Company,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,ViewDocument:Recipient_Company,,ViewDocuments
+8,Browser,To append the given string with random characters,PSIC_appendrandomstring,ViewDocument:Subject,%Subject%,
+9,Fax_Subject,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,ViewDocument:Subject,,ViewDocuments
+10,Browser,To append the given string with random characters,PSIC_appendrandomstring,ViewDocument:Message,%Message%,
+11,Message_Txt,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,ViewDocument:Message,,ViewDocuments
+12,Send,"Click the [<Object>] ",Click,,,ViewDocuments
+13,Browser,"Take a Screen Shot ",takeScreenshot,,,
+14,Fax_Confirm_Msg,Assert if [<Object>] element is displayed,assertElementDisplayed,,,ViewDocuments
+15,Done,"Click the [<Object>] ",Click,,,ViewDocuments
+16,Browser,"Take a Screen Shot ",takeScreenshot,,,

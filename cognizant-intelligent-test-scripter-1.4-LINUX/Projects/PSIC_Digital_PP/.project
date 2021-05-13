@@ -1,0 +1,118 @@
+{
+  "id" : "PSIC_Digital_ProducerPortal_TaskCenter",
+  "name" : "PSIC_Digital_ProducerPortal_TaskCenter",
+  "version" : "1.3",
+  "attributes" : [ ],
+  "tags" : [ ],
+  "_meta" : [ {
+    "type" : "attribute",
+    "name" : "scenario",
+    "desc" : "High level classification of test requirement/cases grouped together",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@smoke",
+    "desc" : "Non-exhaustive set of tests that aim at ensuring that the most important functions work",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@uat",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "tag",
+    "name" : "@load",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Tag",
+    "attributes" : [ ],
+    "tags" : [ ]
+  }, {
+    "type" : "scenario",
+    "name" : "PP_WorkFlow",
+    "ref" : "com.cognizant.cognizantits.datalib.model.Attribute",
+    "attributes" : [ ],
+    "tags" : [ ]
+  } ],
+  "data" : [ {
+    "id" : "PP_WorkFlow#PendingNonRenewal_SearchbyPolicyNo",
+    "name" : "PendingNonRenewal_SearchbyPolicyNo",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  }, {
+    "id" : "PP_WorkFlow#PolicyCanceled_SearchbyPolicyNo",
+    "name" : "SearchbyPolicyNo",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  }, {
+    "id" : "PP_WorkFlow#Policy_DataExtract",
+    "name" : "Policy_DataExtract",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  }, {
+    "id" : "PP_WorkFlow#PP_Dashboard",
+    "name" : "PP_Dashboard",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  }, {
+    "id" : "PP_WorkFlow#PP_TaskCenter_verifyElement",
+    "name" : "PP_TaskCenter_verifyElement",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  }, {
+    "id" : "PP_WorkFlow#Producer_Signin",
+    "name" : "Producer_Signin",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  }, {
+    "id" : "PP_WorkFlow#Producer_Signout",
+    "name" : "Producer_Signout",
+    "tags" : [ ],
+    "attributes" : [ {
+      "name" : "type",
+      "value" : "reusable"
+    }, {
+      "name" : "scenario",
+      "value" : "PP_WorkFlow"
+    } ]
+  } ]
+}

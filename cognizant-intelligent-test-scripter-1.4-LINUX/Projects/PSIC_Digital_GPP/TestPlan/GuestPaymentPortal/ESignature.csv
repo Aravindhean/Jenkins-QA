@@ -1,0 +1,20 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,ProducerEmail_TB,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,Duckcreek_Policy
+2,ProducerEmail_TB,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,Set,DC:ProducerEmail,,Duckcreek_Policy
+3,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+4,ESignature_Checkbox2,Click on [<Object>],PSIC_clickByJS,DC:eDelivery,,Duckcreek_Policy
+5,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+6,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+7,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@2,,
+8,EmailAddress_TB,Enter the value [<Data>] in the Field [<Object>],Set,DC:EmailAddress,,Duckcreek_Policy
+9,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+10,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+11,IAgree_CB,Click on [<Object>],PSIC_clickByJS,DC:eSign,,Duckcreek_Policy
+12,Browser,Send Keys [<Data>]  to Window.,sendKeysToWindow,@TAB,,
+13,Browser,Change Default Element finding wait time by [<Data>] seconds,setElementTimeOut,@2,,
+14,Browser,"Take a Screen Shot ",takeScreenshot,,,
+15,ContinuePayment,"Wait for [<Object>] to be clickable ",waitForElementToBeClickable,,,Duckcreek_Policy
+16,ContinuePayment,Click on [<Object>],clickByJS,,,Duckcreek_Policy
+17,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
+18,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
+19,Browser,"Take a Screen Shot ",takeScreenshot,,,

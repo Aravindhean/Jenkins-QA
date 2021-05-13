@@ -1,0 +1,4 @@
+Step,ObjectName,Description,Action,Input,Condition,Reference
+1,TaskCenter_Green,Assert if [<Object>] element is displayed,assertElementDisplayed,,,PP_TaskCenter
+2,ViewNotice_Header,Assert if [<Object>] element is displayed,assertElementDisplayed,,,PP_TaskCenter
+3,ViewNotice_Title,Assert if [<Object>] element is displayed,assertElementDisplayed,,,PP_TaskCenter
