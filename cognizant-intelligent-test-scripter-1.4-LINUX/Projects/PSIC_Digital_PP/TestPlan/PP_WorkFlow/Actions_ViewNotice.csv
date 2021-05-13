@@ -1,5 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Select_Action,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,TaskCenter:CardName,REPLACE,PP_TaskCenter
-2,Select_Action,"Click the [<Object>] ",Click,,,PP_TaskCenter
-3,ViewNotice,Click the [<Object>] if it is displayed,ClickIfVisible,,,PP_TaskCenter
-4,Browser,"Take a Screen Shot ",takeScreenshot,,,

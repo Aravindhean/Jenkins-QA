@@ -1,2 +1,0 @@
-Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
-true,PROD_DIM_Scenarios,11.SignUp_User_Mgmt_Approval,1:2,NoRun,Chrome,Default,Any

@@ -1,5 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Browser,Add a variable to access within testcase,AddVar,PolicyRelatedInfo:FileLocation,%FileLocation%,
-2,SelectFile,Upload the documents from system path,PSIC_UploadDocs,PolicyRelatedInfo:FileLocation,%FileLocation%,Upload_Documents_Info
-3,FileName,Assert if [<Object>] element is displayed,assertElementDisplayed,,,Upload_Documents_Info
-4,FileName,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,PolicyRelatedInfo:FileName2,,Upload_Documents_Info

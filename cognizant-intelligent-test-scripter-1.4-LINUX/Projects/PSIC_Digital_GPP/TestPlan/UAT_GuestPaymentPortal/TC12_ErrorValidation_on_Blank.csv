@@ -1,7 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Execute,Launch Make Payment Portal,GuestPaymentPortal:PP_Login,,,
-2,Execute,Check the Recaptcha Checkbox,GuestPaymentPortal:ReCaptcha,,,
-3,Browser,Switching control to the default window,switchToDefaultContent,,,
-4,Browser,Wait for [<Data>] milli seconds,pause,@1000,,
-5,Execute,"Click Continue button ",GuestPaymentPortal:Continue_BTN,,,
-6,Execute,Verify Error Message Displayed,GuestPaymentPortal:Verify_BlankErrorMsg,,,

@@ -1,6 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Colvalues,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,TaskCenter_RuntimeData:Program,,PP_TaskCenter
-"//2",PolicyNumber,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,TaskCenter_RuntimeData:PolicyChild,REPLACE,PP_TaskCenter
-"//3",PolicyNumber,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,TaskCenter_RuntimeData:PolicyNo,,PP_TaskCenter
-"//4",Insured,Set object [<Object>] property  as [<Data>] at runtime,setObjectProperty,TaskCenter_RuntimeData:PolicyChild,REPLACE,PP_TaskCenter
-"//5",Insured,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheet,TaskCenter_RuntimeData:Insured,,PP_TaskCenter

@@ -1,6 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Profile_Icon,"Click the [<Object>] ",Click,,,User_Settings
-2,Update_Profile,"Click the [<Object>] ",Click,,,User_Settings
-3,OK_BTN,"Click the [<Object>] ",Click,,,User_Settings
-4,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
-5,Browser,"Take a Screen Shot ",takeScreenshot,,,

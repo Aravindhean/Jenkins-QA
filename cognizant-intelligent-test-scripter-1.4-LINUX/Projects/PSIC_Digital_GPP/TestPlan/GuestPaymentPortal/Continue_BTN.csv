@@ -1,4 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Continue_BTN,"Click the [<Object>] ",clickByJS,,,GuestPaymentPortal
-2,Browser,Wait for [<Data>] milli seconds,pause,@3000,,
-3,Browser,"Take a Screen Shot ",takeScreenshot,,,
