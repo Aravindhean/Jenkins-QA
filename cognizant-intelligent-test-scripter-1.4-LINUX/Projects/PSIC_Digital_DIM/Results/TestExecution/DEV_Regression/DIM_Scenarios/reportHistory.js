@@ -1,1 +1,0 @@
-var reportName="PROD_Regression:DIM_Scenarios";var dataSet=[{"PassTC":"1","FailTC":"0","ReportPath":"07-May-2021 07-54-46/summary.html","ExecTC":"1","ExecutionDate":"07-May-2021 07-54-46","ExecTime":"00:01:05"},{"PassTC":"2","FailTC":"2","ReportPath":"07-May-2021 07-58-59/summary.html","ExecTC":"4","ExecutionDate":"07-May-2021 07-58-59","ExecTime":"00:09:07"}]

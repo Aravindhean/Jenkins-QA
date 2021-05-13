@@ -1,1 +1,0 @@
-var reportName="TEST_Regression:SignUp_and_Approval";var dataSet=[{"PassTC":"0","FailTC":"1","ReportPath":"06-May-2021 08-30-06/summary.html","ExecTC":"1","ExecutionDate":"06-May-2021 08-30-06","ExecTime":"00:11:07"},{"PassTC":"0","FailTC":"1","ReportPath":"06-May-2021 08-46-58/summary.html","ExecTC":"1","ExecutionDate":"06-May-2021 08-46-58","ExecTime":"00:02:52"}]

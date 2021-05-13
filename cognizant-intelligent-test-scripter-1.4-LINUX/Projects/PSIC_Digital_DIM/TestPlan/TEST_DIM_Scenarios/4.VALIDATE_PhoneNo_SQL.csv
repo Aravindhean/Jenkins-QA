@@ -1,7 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Execute,,DIM_WorkFlow:User_Login,,,
-2,Execute,,DIM_WorkFlow:Settings,,,
-3,Browser,switching to window by title [<Data>],switchToWindowByTitleContains,@Settings,,
-4,Execute,,DIM_WorkFlow:EditInfo_Update_PhoneNo,,,
-5,Execute,,DIM_WorkFlow:PhoneNo_SQL,,,
-6,Execute,,DIM_WorkFlow:User_Signout,,,

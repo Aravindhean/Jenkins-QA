@@ -1,4 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Profile_Icon,Click on [<Object>],clickByJS,,,Task_Queue
-2,Sign_Out,Click on [<Object>],clickByJS,,,Task_Queue
-3,Browser,Wait for [<Data>] milli seconds,pause,@5000,,

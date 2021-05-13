@@ -1,8 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Browser,Wait for [<Data>] milli seconds,pause,@2000,,
-2,Bind_Btn,Wait  for the element [<Object>] to be present,waitForElementToBePresent,,,Duckcreek_Policy
-3,Bind_Btn,"Wait for [<Object>] to be visible ",waitForElementToBeClickable,,,Duckcreek_Policy
-4,Bind_Btn,Click the [<Object>] and Wait for Page to be loaded,clickByJS,,,Duckcreek_Policy
-5,LoadingMask,Wait for expected condition attribute in Condition and value in Input,PSIC_LoadingElementWait,@opacity: 0; display: none;,style,Duckcreek_Policy
-6,Browser,Wait for [<Data>] milli seconds,pause,@5000,,
-7,Browser,"Take a Screen Shot ",takeScreenshot,,,

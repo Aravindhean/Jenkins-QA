@@ -1,9 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:Mail_UserID,%OutlookUsername%,
-2,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:Mail_Pwd,%OutlookPassword%,
-3,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:Ingestion_MailBox,%ClaimsTestUser%,
-4,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:ClaimFormat,%ClaimFormat%,
-5,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:FileLocation,%FileLoc%,
-6,Browser,Add a variable to access within testcase,AddVar,Mail_Ingestion:FileLocation2,%FileLoc2%,
-7,Browser,Send Mail to Claims Test URL with Single Attachment,PSIC_ClaimMail2Attachments,Mail_Ingestion:Ingestion_MailBox,"%OutlookUsername%,%OutlookPassword%,%ClaimsTestUser%,%ClaimFormat%,%FileLoc%,%FileLoc2%",
-8,Browser,Wait for [<Data>] milli seconds,pause,@5000,,

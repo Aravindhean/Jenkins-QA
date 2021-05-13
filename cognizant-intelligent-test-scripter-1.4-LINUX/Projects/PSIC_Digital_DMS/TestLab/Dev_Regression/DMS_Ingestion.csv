@@ -1,6 +1,0 @@
-Execute,TestScenario,TestCase,Iteration,Status,Browser,BrowserVersion,Platform
-true,DEV_DMS_Scenarios,EmailIngestion_WithoutAttachments,Single,NoRun,Chrome Headless,Default,Any
-true,DEV_DMS_Scenarios,Email_Ingestion,Single,NoRun,Chrome Headless,Default,Any
-true,DEV_DMS_Scenarios,Fax_Ingestion,Single,NoRun,Chrome Headless,Default,Any
-true,DEV_DMS_Scenarios,Scan_Ingestion,Single,NoRun,Chrome Headless,Default,Any
-true,DEV_DMS_Scenarios,OCR_Testing,Single,NoRun,Chrome Headless,Default,Any

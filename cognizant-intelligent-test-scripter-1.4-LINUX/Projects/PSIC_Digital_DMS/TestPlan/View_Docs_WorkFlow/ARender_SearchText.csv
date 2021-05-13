@@ -1,6 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Browser,Switch to frame by ID Starting with: [<Data>],switchToFramebyid,@arendergwt,,
-2,Search_Result,Click on [<Object>],clickByJS,,,ViewDocuments
-3,Search_ARender,Enter the value [<Data>] in the Field [<Object>]  if the test data is available,PSIC_Set,@1102750,,ViewDocuments
-4,Search_Result,Store the [<Object>] element's text into the Runtime variable: [<Data>],storeText,ViewDocument:ClaimNumber,,ViewDocuments
-5,Browser,Store the [<Object>] element's text into datasheet:columname [<Data>],storeTextinDataSheetlist,ViewDocument:ClaimNumber,,

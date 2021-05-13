@@ -1,3 +1,0 @@
-Step,ObjectName,Description,Action,Input,Condition,Reference
-1,Execute,,GuestPaymentPortal:DC_Login,,,
-2,Execute,,GuestPaymentPortal:HO4_NewBusiness,,,
