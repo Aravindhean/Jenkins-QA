@@ -1,4 +1,4 @@
-@echo off
+﻿@echo off
 pushd %~dp0
 
 rem For App to load lib from
@@ -9,3 +9,6 @@ start javaw -Xms128m -Xmx1024m -Dfile.encoding=UTF-8 -cp cognizant-intelligent-t
 ) ELSE (
 java -Xms128m -Xmx1024m -Dfile.encoding=UTF-8 -cp cognizant-intelligent-test-scripter-ide-1.4.jar;%APP_CLASSPATH%; com.cognizant.cognizantits.ide.main.Main %*
 )
+
+
+Test Scripts
