@@ -5327,3 +5327,14 @@ SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cog
 SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
 SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
 2021-05-14 05:24:53:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:02:37.522 ]
+2021-05-14 05:30:17:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main main:Launching Cognizant Intelligent Test Scripter IDE
+2021-05-14 05:30:18:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4/lib/cognizant-intelligent-test-scripter-engine-1.4.jar
+2021-05-14 05:30:18:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4/lib/commands/PSIC_CustomMethods.jar
+2021-05-14 05:30:18:05S -0700 [INFO] com.cognizant.cognizantits.engine.support.reflect.ClassFinder checkJarFile:Finding Commands in /home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4/lib/commands/gwcc10.jar
+2021-05-14 05:30:21:05S -0700 [INFO] com.cognizant.cognizantits.engine.drivers.ChromeEmulators load:Loading ChromeEmulators from file
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/ab773031t/Downloads/mygit/Jenkins-QA/cognizant-intelligent-test-scripter-1.4/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+2021-05-14 05:30:35:05S -0700 [INFO] com.cognizant.cognizantits.ide.main.Main finish:Cognizant Intelligent Test Scripter IDE has been Terminated - [ Total Time : 00:00:18.230 ]
